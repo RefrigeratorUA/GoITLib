@@ -1,0 +1,155 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: rgb(249, 249, 249);
+}
+.main {
+  width: 1060px;
+  min-height: 100%;
+  margin: 0 auto 0;
+  overflow: hidden;
+  position: relative; /*для опускания footer*/
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px rgba(219,219,219,0.8);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  line-height: 16pt;
+}
+header {
+  margin: 50px 48px 40px 46px;
+}
+.logo {
+  display: block;
+  margin-bottom: 40px;
+}
+.top_menu {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(79, 79, 79);
+}
+.menu_item a {
+  display: inline-block;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-right: 38px;
+  border-right: 1px solid; /* не дает пунктам меню раздвигаться при hover и active */
+  border-left: 1px solid; /* за счет 1px забираем у padding по пикселю*/
+  border-color: rgb(79, 79, 79);
+  color: white;
+  line-height: 40px; /*Выравниваем текст по вертикали. Значение равно размеру родительского блока top_menu*/
+  text-decoration: none;
+  font-size: 11pt;
+}
+.menu_item  a:hover, a:active {
+  padding-left: 23px; /*Из-за того, что a:active собирает в себе остальные a:active*/
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: rgb(131, 131, 131);
+  background-color: rgb(47, 47, 47);
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  padding-bottom: 120px; /*Чтобы футер не перекрывал контент*/
+  margin: 0 48px 0 46px;
+  color: red;
+}
+.left_menu {
+  float: left;
+  width: 240px;
+  margin-right: 48px;
+}
+.container ul {
+  border-top: 1px solid rgb(200, 200, 200);
+}
+.container li {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgb(200, 200, 200);
+  line-height: 40px;
+}
+.container a {
+  display: block;
+  text-decoration: none;
+  color: rgb(101, 99, 99);
+}
+.container a:link {
+  padding-left: 24px;
+  color: rgb(101, 99, 99);
+
+}
+.container a:hover, a:active {
+  padding-left: 36px;
+  background-color: rgb(249, 249, 249);
+  text-decoration: none;
+  color: black;
+}
+.content {
+  float: left;
+  width: 676px;
+}
+.border_image {
+  width: 100%;
+  height: 400px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid;
+  border-color: rgb(200, 200, 200);
+  text-align: center;
+}
+.border_image img {
+display: inline-block;
+vertical-align: middle;
+max-height: 388px;
+}
+.helper {                   /*Помогает выровнять блок img по вертикали*/
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0px;
+}
+.text {
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 25px;
+  color: black;
+}
+.clear {
+  clear: left;
+}
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 966px; /*Из-за absolute вложенные div не отрабатывают width*/
+    height: 40px;
+    margin: 0 48px 40px 46px;
+    background-color: rgb(225, 225, 225);
+  }
+.bottom_menu {
+  float: left;
+}
+.menu_item_bottom a {
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-right: 38px;
+  color: black;
+  line-height: 40px; /*Выравниваем текст по вертикали. Значение равно размеру родительского блока top_menu*/
+  text-decoration: none;
+  font-size: 10pt;
+}
+.menu_item_bottom a:hover, a:active {
+  text-decoration: underline;
+  border: none; /*а:active наследует предыдущий стиль top_menu*/
+  background-color: rgb(225, 225, 225);
+}
+footer span {
+  display: block;
+  margin-right: 25px;
+  line-height: 40px;
+  text-align: right;
+}
