@@ -1,0 +1,281 @@
+body {
+  width: 100%;
+  background-color: #0c739f;
+  font-family: 'Tahoma';
+}
+
+.bg-image {
+  min-height: 988px;
+  background-image: url(../img/bg-image.jpg);
+  background-repeat: repeat-x;
+}
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 283px;
+  height: 164px;
+}
+
+header {
+  position: relative;
+  padding: 11px 33px 0 28px;
+}
+
+header span {
+  display: block;
+  float: right;
+}
+
+header a {
+  color: #128aa7;
+  font-size: 7pt;
+  line-height: 15pt;
+}
+
+header ul {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+}
+
+header ul li {
+  float: right;
+  display: block;
+  width: 56px;
+  margin: 0 auto;
+  padding-top: 42px;
+  background: url(../img/maldives.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+header ul li+li {
+  background: url(../img/sri_lanka.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header ul li+li+li {
+  background: url(../img/bhutan.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header ul li+li+li+li {
+  background: url(../img/tibet.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header ul li+li+li+li+li {
+  background: url(../img/nepal.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header ul li+li+li+li+li+li {
+  background: url(../img/india.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.contacts {
+  float: right;
+  margin-bottom: 34px;
+  color: #128aa7;
+  font-size: 9pt;
+  line-height: 15pt;
+}
+
+.contacts h2 {
+  font-size: 9pt;
+  color: #128aa7;
+  font-weight: bold;
+}
+
+.photo {
+  min-height: 236px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #128aa7;
+  background-image: url(../img/photo.jpg);
+}
+
+
+/*ЭТО ВЕРХНЕЕ МЕНЮ*/
+
+.top_menu {
+  width: 100%;
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid black;
+  background: #323232;
+  line-height: 28px;
+}
+
+.top_menu a {
+  font-size: 10.7pt;
+  color: white;
+  text-decoration: none;
+}
+
+.top_menu ul {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.top_menu ul li {
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.top_menu_main {
+  margin-left: 67px;
+  margin-right: 57px;
+}
+
+.top_menu_travel {
+  text-indent: 10px;
+  padding-right: 45px;
+}
+
+.top_menu_service {
+  text-indent: 10px;
+  padding-right: 54px;
+}
+
+.top_menu_partner {
+  text-indent: 10px;
+  padding-right: 44px;
+}
+
+.top_menu_reviews {
+  text-indent: 10px;
+  padding-right: 64px;
+}
+
+.top_menu_about {
+  padding-right: 62px;
+}
+
+.top_menu ul li ul a {
+  color: #c8c8c8;
+}
+
+.top_menu ul li ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 28.5px;
+  border-top: 1px solid black;
+  background: #323232;
+}
+
+.top_menu ul li ul li {
+  float: none;
+  display: block;
+  background: none;
+}
+
+.top_menu ul li:hover ul {
+  display: block;
+}
+
+
+/*ЭТО КОНТЕНТ*/
+
+.content {
+  display: inline-flex;
+  box-shadow: 0 6px 0px -3px rgba(0, 0, 0, 1);
+}
+
+.info {
+  float: left;
+  width: 21%;
+  background-color: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+}
+
+.text {
+  width: 58%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.news {
+  float: right;
+  width: 21%;
+  background-color: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+}
+
+h1 {
+  color: #424c43;
+  font-weight: bold;
+  text-align: center;
+  line-height: 39px;
+}
+
+.info_box1 {
+  padding-left: 15px;
+  border-bottom: 1px solid #c7cacf;
+}
+
+.info_box2 {
+  min-height: 257px;
+  padding-left: 15px;
+  border-bottom: 1px solid #c7cacf;
+}
+
+.news_box1 {
+  padding-left: 15px;
+  border-bottom: 1px solid #c7cacf;
+}
+
+.news_box2 {
+  padding-left: 15px;
+  border-bottom: 1px solid #c7cacf;
+}
+
+.news_box3 {
+  padding-left: 15px;
+  border-bottom: 1px solid #c7cacf;
+}
+
+.content span {
+  color: #424c43;
+  font-size: 10.5pt;
+  line-height: 24px;
+}
+
+.content hr {
+  margin: 0 auto;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 10pt;
+  line-height: 34px;
+  color: #cee3ec;
+}
