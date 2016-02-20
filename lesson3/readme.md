@@ -1,1 +1,1 @@
-http://RefrigeratorUA.github.io/GoITLib/lesson3/
+http://RefrigeratorUA.github.io/GoITLib/Lesson3/
