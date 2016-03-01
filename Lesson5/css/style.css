@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Helvetica Neue Roman';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    font-family: 'Helvetica Neue Roman', Tahoma, sans-serif;
+    color: #60b5ed;
+    /*background: linear-gradient(to bottom, #fafafa, #cecece);*/
+    background: linear-gradient(to bottom, #f00, #000);
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.nav {
+    height: 36px;
+    padding-right: 20px;
+    background-image: url(../img/menu.png);
+    background-color: blue;
+    background-repeat: repeat-x;
+    line-height: 36px;
+}
+/*ПРАВОЕ МЕНЮ*/
+ul.menu_1 li a {
+    padding-left: 10px;
+    padding-right: 14px;
+    text-decoration: none;
+    font-size: 10pt;
+    color: white;
+}
+ul.menu_1 li img {
+    vertical-align: middle;
+}
+ul.menu_1 li a span  {
+    text-decoration: underline;
+}
+ul.menu_1 li {
+    float: right;
+    display: inline-block;
+    height: 32px;
+    margin-top: 2px;
+    line-height: 30px;
+}
+ul.menu_1 li a:hover {
+    display: block;
+    margin: -2px -1px 0 -1px;
+    border-left: 1px solid #4d9ed8;
+    border-right: 1px solid#4d9ed8;
+    border-bottom: 1px solid #4299d2;
+    background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+    line-height: 35px;
+}
+ul.menu_1 li:last-child {
+    border-left: 1px solid #4299d2;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+/*ЛЕВОЕ МЕНЮ*/
+ul.menu_2 li a {
+    padding-left: 10px;
+    padding-right: 14px;
+    text-decoration: none;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #60b5ed;
+}
+ul.menu_2 li {
+    float: right;
+    display: inline-block;
+    height: 32px;
+    margin-top: 2px;
+    line-height: 30px;
+
+}
+ul.menu_2 li a:hover {
+    display: block;
+    margin-top: -2px;
+    background-color: #4eabda;
+    line-height: 36px;
+    color: white;
+}
+
+
+
+.main {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: url(../img/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+.cadastre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -307px;
+    margin-left: -280px;
+    width: 560px;
+    height: 614px;
+    /*border-top: 1px solid white;*/
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
