@@ -1,0 +1,130 @@
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 500px;
+    height: 540px;
+    margin-top: -270px;
+    margin-left: -270px;
+    border: 1px solid grey;
+}
+
+table {
+    width: 100%;
+}
+
+tr.row1 {
+    height: 47px;
+}
+
+tr.row2 {
+    height: 10px;
+}
+
+tr.row3 {
+    height: 128px;
+}
+
+tr.row4 {
+    height: 10px;
+}
+
+tr.row5 {
+    height: 130px;
+}
+
+tr.row6 {
+    height: 10px;
+}
+
+tr.row7 {
+    height: 61px;
+}
+
+tr.row8 {
+    height: 10px;
+}
+
+tr.row9 {
+    height: 56px;
+}
+
+tr.row10 {
+    height: 10px;
+}
+
+tr.row11 {
+    height: 28px;
+}
+
+tr.row12 {
+    height: 10px;
+}
+
+tr.row13 {
+    height: 30px;
+}
+
+td.col1 {
+    width: 48px;
+}
+
+td.col2 {
+    width: 10px;
+}
+
+td.col3 {
+    width: 58px;
+}
+
+td.col4 {
+    width: 10px;
+}
+
+td.col5 {
+    width: 65px;
+}
+
+td.col6 {
+    width: 10px;
+}
+
+td.col7 {
+    width: 125px;
+}
+
+td.col8 {
+    width: 10px;
+}
+
+td.col9 {
+    width: 78px;
+}
+
+td.col10 {
+    width: 10px;
+}
+
+td.col11 {
+    width: 76px;
+}
+
+.white {
+    background: white;
+}
+
+.black {
+    background: black;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
