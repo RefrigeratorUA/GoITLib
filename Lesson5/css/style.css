@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'Helvetica Neue Roman';
     src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
-         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'), url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'), url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 html, body {
     height: 100%;
-}
-.container {
-    height: 100%;
+    width: 100%;
     font-family: 'Helvetica Neue Roman', Tahoma, sans-serif;
     color: #60b5ed;
-    /*background: linear-gradient(to bottom, #fafafa, #cecece);*/
-    background: linear-gradient(to bottom, #f00, #000);
+    background: linear-gradient(to bottom, #fafafa, #cecece);
+}
+
+.container {
+    height: 100%;
 }
 
 .clearfix:after {
-  content: '';
-  clear: both;
-  display: block;
+    content: '';
+    clear: both;
+    display: block;
 }
+
 .nav {
     height: 36px;
     padding-right: 20px;
@@ -32,7 +32,10 @@ html, body {
     background-repeat: repeat-x;
     line-height: 36px;
 }
+
+
 /*ПРАВОЕ МЕНЮ*/
+
 ul.menu_1 li a {
     padding-left: 10px;
     padding-right: 14px;
@@ -40,12 +43,15 @@ ul.menu_1 li a {
     font-size: 10pt;
     color: white;
 }
+
 ul.menu_1 li img {
     vertical-align: middle;
 }
-ul.menu_1 li a span  {
+
+ul.menu_1 li a span {
     text-decoration: underline;
 }
+
 ul.menu_1 li {
     float: right;
     display: inline-block;
@@ -53,6 +59,7 @@ ul.menu_1 li {
     margin-top: 2px;
     line-height: 30px;
 }
+
 ul.menu_1 li a:hover {
     display: block;
     margin: -2px -1px 0 -1px;
@@ -62,12 +69,16 @@ ul.menu_1 li a:hover {
     background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
     line-height: 35px;
 }
+
 ul.menu_1 li:last-child {
     border-left: 1px solid #4299d2;
     padding-left: 10px;
     margin-left: 10px;
 }
+
+
 /*ЛЕВОЕ МЕНЮ*/
+
 ul.menu_2 li a {
     padding-left: 10px;
     padding-right: 14px;
@@ -76,14 +87,15 @@ ul.menu_2 li a {
     text-decoration: none;
     color: #60b5ed;
 }
+
 ul.menu_2 li {
     float: right;
     display: inline-block;
     height: 32px;
     margin-top: 2px;
     line-height: 30px;
-
 }
+
 ul.menu_2 li a:hover {
     display: block;
     margin-top: -2px;
@@ -92,17 +104,14 @@ ul.menu_2 li a:hover {
     color: white;
 }
 
-
-
 .main {
     position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: url(../img/bg1.jpg) no-repeat center center fixed;
+    width: 100%;
+    min-height: 95.4%;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
-
 }
+
 .cadastre {
     position: absolute;
     top: 50%;
@@ -111,8 +120,100 @@ ul.menu_2 li a:hover {
     margin-left: -280px;
     width: 560px;
     height: 614px;
-    /*border-top: 1px solid white;*/
     background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
 
+.cadastre h1 {
+    font-size: 18pt;
+    line-height: 62px;
+}
 
+.cadastre a {
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid;
+    border-color: #c4ccb5;
+}
+
+.ou {
+    margin-bottom: 30px;
+}
+
+.form_size {
+    width: 276px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+[type="text"], [type="email"], [type="password"] {
+    width: 255px;
+    height: 34px;
+    margin-bottom: 16px;
+    padding-left: 19px;
+    border-top: 1px solid #161615;
+    border-right: 1px solid #121212;
+    border-bottom: 1px solid #494949;
+    border-left: 1px solid #121212;
+    background-color: #0f0f0f;
+    font-size: 10.5pt;
+    color: white;
+}
+
+[type="text"]:hover, [type="email"]:hover, [type="password"]:hover {
+    border-top: 1px solid #1a4671;
+    border-right: 1px solid #1a4a79;
+    border-bottom: 1px solid #6b9fd1;
+    border-left: 1px solid #1a4a79;
+    background-color: #1b5288;
+    box-shadow: 0px 0px 9px 2px rgba(47, 123, 197, 0.77);
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+label.check {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    font-size: 10.5pt;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+label.check input[type="checkbox"] {
+    position: relative;
+    bottom: 1px;
+    margin: 0 8px 0 1px;
+    vertical-align: middle;
+}
+
+button.submited {
+    display: block;
+    height: 32px;
+    min-width: 146px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #62c0e3, #2e7ac4);
+    box-shadow: 0px 0px 3px 1px rgba(103, 198, 230, 0.8);
+    font-size: 10.5pt;
+    color: white;
+}
+
+.cadastre p {
+    margin-top: 10px;
+    font-size: 8pt;
+    color: #cccccc;
+    line-height: 12pt;
 }
