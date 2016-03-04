@@ -37,14 +37,13 @@ html, body {
 /*ПРАВОЕ МЕНЮ*/
 
 ul.menu_1 li a {
-    padding-left: 10px;
-    padding-right: 14px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 10pt;
     color: white;
 }
 
 ul.menu_1 li img {
+    padding-left: 10px;
     vertical-align: middle;
 }
 
@@ -57,17 +56,26 @@ ul.menu_1 li {
     display: inline-block;
     height: 32px;
     margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 14px;
     line-height: 30px;
+    font-size: 10pt;
+    color: white;
 }
 
-ul.menu_1 li a:hover {
-    display: block;
-    margin: -2px -1px 0 -1px;
+ul.menu_1 li:first-child {
+    height: 35px;
+    margin: 0;
     border-left: 1px solid #4d9ed8;
     border-right: 1px solid#4d9ed8;
     border-bottom: 1px solid #4299d2;
     background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
     line-height: 35px;
+}
+
+ul.menu_1 a:hover {
+    text-decoration: none;
+    color: #60b5ed;
 }
 
 ul.menu_1 li:last-child {
