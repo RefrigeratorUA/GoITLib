@@ -1,7 +1,980 @@
-@font-face {
-    font-family: 'Helvetica Neue Roman';
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'), url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'), url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+body {
+    width: 910px;
+    margin: 17px auto 0;
+    background: white;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 19px;
+    color: #5e696d;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header {
+    line-height: 27px;
+    margin: 0 0 12px 0;
+}
+
+header .phone {
+    float: left;
+    padding: 0 1px 0 8px;
+}
+
+header .phone img {
+    vertical-align: middle;
+}
+
+header .phone span {
+    display: block;
+    float: right;
+    padding: 2px 0 0 3px;
+}
+
+header .authorization {
+    float: left;
+    width: 495px;
+    margin: 1px 0 0 14px;
+    background: linear-gradient(to bottom, #1f6787, #0c3357);
+    border-radius: 4px;
+    font-family: 'Lucida Sans Unicode', Arial, Tahoma, sans-serif;
+    line-height: 25px;
+    box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+header .authorization img {
+    float: left;
+    padding: 4px 4px 0 7px;
+}
+
+header .authorization form {
+    float: left;
+    margin: -2px 0 0 0;
+}
+
+header .authorization [type="text"], [type="password"] {
+    width: 112px;
+    height: 13px;
+    border: 1px solid #97a2a6;
+    border-radius: 2px;
+    font-family: 'Lucida Sans Unicode', Arial, Tahoma, sans-serif;
+    font-size: 11px;
+    vertical-align: middle;
+    line-height: 12px;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+header .authorization [type="submit"] {
+    padding: 1px 0 0 2px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 11px;
+    vertical-align: middle;
+    font-family: 'Lucida Sans Unicode', Arial, Tahoma, sans-serif;
+}
+
+header .authorization span {
+    float: left;
+    padding: 0 0 0 3px;
+    color: white;
+    font-size: 11px;
+}
+
+header .authorization a {
+    float: left;
+    display: block;
+    padding: 0 0 0 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+header .authorization a:last-child {
+    margin: 0 0 0 17px;
+    text-decoration: underline;
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+header .mini_navi {
+    float: left;
+    width: 75px;
+    height: 20px;
+    margin: 1px 0 0 17px;
+    border: 1px solid #bdc4c7;
+    border-radius: 14px;
+    box-shadow: 1px 10px 7px -9px rgba(188, 195, 198, 0.7);
+}
+
+header .mini_navi img {
+    display: block;
+    margin: 0 -5px 0 0;
+    padding: 0 0 7px 8px;
+}
+
+header .mini_navi li {
+    display: inline-block;
+}
+
+header .logo {
+    position: relative;
+    margin: 8px 0 0 0;
+    padding-left: 1px;
+}
+
+header .link {
+    position: absolute;
+    top: 40%;
+    left: 1px;
+    width: 265px;
+    height: 70px;
+}
+
+
+/*Обновил photoshop на СС 2015 )))*/
+
+header nav {
+    float: left;
+    width: 100%;
+    height: 31px;
+    border: 1px solid rgb(13, 22, 66);
+    border-radius: 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(44, 48, 52) 87%, rgb(87, 96, 104) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(44, 48, 52) 87%, rgb(87, 96, 104) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(44, 48, 52) 87%, rgb(87, 96, 104) 100%);
+    box-shadow: 4px 5px 6px -3px rgba(0, 0, 0, 0.75);
+}
+
+header nav ul {
+    float: left;
+    margin: 0 0 0 127px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 17px 0 19px;
+}
+
+header nav ul li:nth-child(2) {
+    padding: 0 8px 0 10px;
+}
+
+header nav ul li:nth-child(3) {
+    padding: 0 14px 0 16px;
+}
+
+header nav ul li:nth-child(4) {
+    padding: 0 7px 0 9px;
+}
+
+header nav ul li:nth-child(5) {
+    padding: 0 10px 0 12px;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode', Arial, Tahoma, sans-serif;
+    color: #b1bcc0;
+}
+
+header nav ul li:hover {
+    color: white;
+    border: none;
+    border-radius: 14px;
+    background-image: -moz-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+header nav .koshik {
+    float: right;
+    line-height: 30px;
+}
+
+header nav .koshik img {
+    margin: -4px 7px 0 0;
+    vertical-align: middle;
+}
+
+header nav .koshik span {
+    display: block;
+    float: right;
+    margin: -1px 12px 0 0;
+    font-size: 11px;
+    font-family: Arial, Tahoma, sans-serif;
+    color: rgb(146, 155, 159);
+}
+
+header nav .koshik strong {
+    display: block;
+    float: right;
+    margin: 0 16px 0 0;
+    font-size: 12px;
+    font-family: Arial, Tahoma, sans-serif;
+    color: rgb(13, 90, 143);
+}
+
+header nav .koshik strong:nth-of-type(2) {
+    margin: 0 15px 0 0;
+}
+
+header nav .koshik span:nth-of-type(2) {
+    margin: -1px 5px 0 0;
+}
+
+
+/*ПОИСК ВЫПАДАЮЩИМ СПИСКОМ ПО АВТО*/
+
+section.search div.search_by_auto {
+    float: left;
+    margin: 0 0 0 5px;
+    border: 1px solid rgb(156, 156, 157);
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 0px rgba(104, 104, 104, 0.9);
+    width: 413px;
+    height: 132px;
+}
+
+section.search div.search_by_auto h1 {
+    padding: 1px 0 0 126px;
+    font-size: 12px;
+    font-family: 'Arial Black', Tahoma, sans-serif;
+    color: #154468;
+}
+
+section.search div.search_by_auto h2 {
+    margin: -9px 0 10px 21px;
+    font-family: 'Arial Black', Tahoma, sans-serif;
+    font-size: 10px;
+    color: #154468;
+}
+
+section.search div.search_by_auto h3 {
+    margin: -22px 0 10px 132px;
+    font-family: 'Arial Black', Tahoma, sans-serif;
+    font-size: 10px;
+    color: #154468;
+}
+
+section.search div.search_by_auto div.disks ul.helper {
+    float: left;
+    margin: 1px 0 0 17px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 74px;
+    text-align: left;
+}
+
+section.search div.search_by_auto div.disks ul.helper li {
+    margin: -3px 0 7px 0;
+    line-height: 0px;
+}
+
+section.search div.search_by_auto div.disks ul.helper li span {
+    font-size: 8px;
+    color: #77858b;
+    line-height: 20px;
+}
+
+section.search div.search_by_auto div.disks ul.choose {
+    float: left;
+    margin: -4px 0 0 2px;
+    line-height: 10px;
+}
+
+section.search div.search_by_auto div.disks ul.choose li.arrow {
+    width: 102px;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    background: url(../img/arrow.png) no-repeat right;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.search div.search_by_auto div.disks ul.choose li.arrow:nth-child(3) {
+    width: 58px;
+}
+
+section.search div.search_by_auto div.disks ul.choose li.arrow select {
+    background: transparent;
+    width: 120px;
+    height: 17px;
+    font-size: 11px;
+    color: black;
+    border: none;
+    vertical-align: top;
+}
+
+section.search div.search_by_auto div.tires {
+    float: right;
+}
+
+section.search div.search_by_auto div.tires ul.helper {
+    float: right;
+    margin: 1px 0 0 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 74px;
+    text-align: left;
+}
+
+section.search div.search_by_auto div.tires ul.helper li {
+    margin: -3px 0 7px 0;
+    line-height: 0px;
+}
+
+section.search div.search_by_auto div.tires ul.helper li span {
+    font-size: 8px;
+    color: #77858b;
+    line-height: 20px;
+}
+
+section.search div.search_by_auto div.tires ul.choose {
+    float: right;
+    margin: -3px 13px 0 2px;
+    line-height: 10px;
+}
+
+section.search div.search_by_auto div.tires ul.choose li.arrow {
+    width: 102px;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    background: url(../img/arrow.png) no-repeat right;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.search div.search_by_auto div.tires ul.choose li.arrow:nth-child(3) {
+    width: 58px;
+}
+
+section.search div.search_by_auto div.tires ul.choose li.arrow select {
+    background: transparent;
+    width: 120px;
+    height: 17px;
+    font-size: 11px;
+    color: black;
+    border: none;
+    vertical-align: top;
+}
+
+section.search div.search_by_auto input {
+    float: right;
+    margin: 0 14px 0 0;
+    border: none;
+    background: none;
+    color: rgb(21, 68, 103);
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* СЕКЦИЯ 2. ПОИСК ПО ШИНАМ */
+
+section.search div.search_tires {
+    float: left;
+    margin: -1px 0 0 14px;
+    border: 1px solid rgb(156, 156, 157);
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 1px rgba(104, 104, 104, 0.35);
+    width: 191px;
+    height: 135px;
+}
+
+section.search div.search_tires h1 {
+    padding: 3px 0 0 10px;
+    font-size: 12px;
+    font-family: 'Arial Black', Tahoma, sans-serif;
+    color: #154468;
+}
+
+section.search div.search_tires ul.helper {
+    float: left;
+    margin: 15px 0 20px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 50px;
+}
+
+section.search div.search_tires ul.helper li:nth-child(2) {
+    margin: 11px 0 0 33px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+section.search div.search_tires ul.helper li:nth-child(3) {
+    margin: 7px 0 0 2px;
+}
+
+section.search div.search_tires ul.choose {
+    float: left;
+    min-width: 118px;
+    margin: 7px 0 7px -3px;
+}
+
+section.search div.search_tires ul.choose li.arrow {
+    margin: 0 0 7px 0;
+    height: 16px;
+    overflow: hidden;
+    background: url(../img/arrow.png) no-repeat right;
+    box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+section.search div.search_tires ul.choose li.arrow:first-child {
+    float: left;
+    width: 52px;
+}
+
+section.search div.search_tires ul.choose li:nth-child(2) {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: black;
+}
+
+section.search div.search_tires ul.choose li.arrow:nth-child(3) {
+    width: 54px;
+}
+
+section.search div.search_tires ul.choose li.arrow:last-child {
+    margin: 8px 0 0 0;
+    width: 45px;
+}
+
+section.search div.search_tires ul.choose li.arrow select {
+    background: transparent;
+    height: 16px;
+    width: 74px;
+    font-size: 11px;
+    color: black;
+    border: none;
+    vertical-align: top;
+}
+
+section.search div.search_tires div.check ul {
+    float: left;
+}
+
+section.search div.search_tires div.check ul {
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    margin: 0 0 0 -4px;
+    font-size: 12px;
+    color: black;
+}
+
+section.search div.search_tires div.check ul li {
+    margin: 0;
+    padding: 0;
+    line-height: 14px;
+}
+
+section.search div.search_tires div.check .weather1:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+section.search div.search_tires div.check .weather1:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 13px;
+}
+
+section.search div.search_tires div.check .weather1:not(checked) + label::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 11px;
+    height: 10px;
+    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+section.search div.search_tires div.check .weather1:checked + label::after {
+    content: '\2714';
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 11px;
+    height: 10px;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.search div.search_tires input[type="submit"] {
+    float: right;
+    margin: -3px 12px 0 0;
+    border: none;
+    background: none;
+    color: rgb(21, 68, 103);
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* СЕКЦИЯ 3. ПОИСК ПО ДИСКАМ */
+
+section.search div.search_disks {
+    float: left;
+    margin: -2px 0 0 10px;
+    border: 1px solid rgb(156, 156, 157);
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 1px rgba(104, 104, 104, 0.35);
+    width: 266px;
+    height: 134px;
+}
+
+section.search div.search_disks h1 {
+    padding: 3px 0 0 9px;
+    font-size: 13px;
+    font-family: 'Arial Black', Tahoma, sans-serif;
+    color: #154468;
+}
+
+section.search div.search_disks div.disks ul.helper {
+    float: left;
+    margin: 9px 0 0 16px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 90px;
+    text-align: left;
+}
+
+section.search div.search_disks div.disks ul.helper li {
+    margin: 0 0 7px 0;
+    line-height: 8px;
+}
+
+section.search div.search_disks div.disks ul.helper li:last-child {
+    margin: -5px 0 0 0;
+}
+
+section.search div.search_disks div.disks ul.helper li span {
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    color: #77858b;
+    line-height: 10px;
+}
+
+section.search div.search_disks div.disks ul.choose {
+    float: left;
+    margin: 5px 0 0 0;
+    line-height: 10px;
+}
+
+section.search div.search_disks div.disks ul.choose li.arrow {
+    width: 57px;
+    overflow: hidden;
+    margin: 0 0 15px 0;
+    background: url(../img/arrow.png) no-repeat right;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.search div.search_disks div.disks ul.choose li.arrow:nth-child(2) {
+    width: 50px;
+}
+
+section.search div.search_disks div.disks ul.choose li.arrow select {
+    background: transparent;
+    width: 76px;
+    height: 17px;
+    font-size: 11px;
+    color: black;
+    border: none;
+    vertical-align: top;
+}
+
+section.search div.search_disks div.disks_param ul {
+    float: left;
+    margin: -11px 0 0 12px;
+    padding: 2px 0 0 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    width: 70px;
+    text-align: left;
+    border-left: 1px solid #bdc6ca;
+}
+
+section.search div.search_disks div.disks_param ul li {
+    line-height: 8px;
+}
+
+section.search div.search_disks div.disks_param ul li:nth-child(2n) {
+    margin: -5px 0 0 0;
+    width: 57px;
+    overflow: hidden;
+    margin: 4px 0 8px 1px;
+    background: url(../img/arrow.png) no-repeat right;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.search div.search_disks div.disks_param ul li span {
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    color: #77858b;
+    line-height: 6px;
+}
+
+section.search div.search_disks div.disks_param ul li select {
+    background: transparent;
+    width: 76px;
+    height: 17px;
+    font-size: 11px;
+    color: black;
+    border: none;
+    vertical-align: top;
+}
+
+section.search div.search_disks input[type="submit"] {
+    float: right;
+    margin: -4px 12px 0 0;
+    border: none;
+    background: none;
+    color: rgb(21, 68, 103);
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+section.content {
+    position: relative;
+}
+
+section.content h1 {
+    display: none;
+}
+
+
+/* LEFT sidebar */
+
+section.sidebar {
+    float: left;
+    width: 182px;
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    color: #114165;
+}
+
+section.sidebar h2 {
+    margin: 17px 0 0 0;
+    padding: 0 0 0 4px;
+    font-size: 13px;
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 12px;
+    line-height: 24px;
+    box-shadow: 1px 2px 3px 0px rgba(150, 150, 150, 0.75);
+}
+
+section.sidebar h2 img {
+    margin: 0 2px 0 -2px;
+    padding: 0 0 2px 0;
+    vertical-align: middle;
+}
+
+section.sidebar ul {
+    margin: 0 0 -20px 0;
+}
+
+section.sidebar h3 {
+    margin: 14px 0 0 2px;
+    padding: 2px 0 0 0px;
+    width: 148px;
+    font-size: 14px;
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 13px;
+    line-height: 24px;
+}
+
+section.sidebar h3 img {
+    margin: 0 3px 0 4px;
+    padding: 0 0 2px 0;
+    vertical-align: middle;
+}
+
+
+/* МОЖНО СДЕЛАТЬ ЧЕРЕЗ border-radius*/
+
+section.sidebar a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #465961;
+    line-height: 26px;
+}
+
+section.sidebar a::before {
+    float: left;
+    content: '';
+    margin: 8px 3px 0 38px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    border: 2px solid rgb(121, 135, 141);
+    border-radius: 50%;
+}
+
+section.sidebar a:hover {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: #0c3256;
+    line-height: 26px;
+}
+
+section.sidebar a:hover::before {
+    content: '';
+    border: 2px solid rgb(49, 58, 85);
+}
+
+
+/* ПРАВЫЙ aside*/
+
+aside {
+    float: right;
+    width: 182px;
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    color: #114165;
+}
+
+aside h2 {
+    margin: 15px 0 0 0;
+    padding: 0 0 0 7px;
+    font-size: 14px;
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 14px;
+    line-height: 25px;
+    box-shadow: 1px 2px 3px 0px rgba(150, 150, 150, 0.75);
+}
+
+aside h2 img {
+    margin: -2px 5px 0 -5px;
+    padding: 0 0 2px 0;
+    vertical-align: middle;
+}
+
+aside h3 {
+    width: 134px;
+    margin: 13px 0 1px 2px;
+    padding: 2px 0 0 0px;
+    font-size: 14px;
+    border: 1px solid rgb(121, 135, 141);
+    border-radius: 12px;
+    line-height: 22px;
+}
+
+aside ul {
+    margin: 0 0 -6px 12px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #114165;
+}
+
+aside h3 img {
+    margin: 0 3px 0 4px;
+    padding: 0 0 2px 0;
+    vertical-align: middle;
+}
+
+aside ul li:first-child {
+    margin: 0;
+}
+
+aside ul li {
+    margin: 0 0 -3px 23px;
+    line-height: 28px;
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+aside .brand:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+aside .brand:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 13px;
+}
+
+aside .brand:not(checked) + label::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgb(17, 65, 101);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+aside .brand:checked + label::after {
+    content: '\2714';
+    position: absolute;
+    top: -4px;
+    left: -9px;
+    width: 8px;
+    height: 8px;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+}
+
+aside input[type="submit"] {
+    width: 82px;
+    height: 26px;
+    border: none;
+    margin: 19px 0 0 23px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 11px;
+    color: #e5e9ea;
+    text-decoration: none;
+    background-image: linear-gradient( 180deg, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    border-radius: 14px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* СЕКЦИЯ С ПРОДУКЦИЕЙ */
+
+main {
+    float: left;
+    position: relative;
+    top: 14px;
+    left: 9px;
+    width: 527px;
+    margin: 0 0 15px 0;
+    padding-bottom: 6px;
+    overflow: hidden;
+    background-image: linear-gradient( 0deg, rgba(35, 75, 93, 0.49) 0%, rgba(118, 141, 151, 0.49) 57%, rgba(201, 207, 209, 0.49) 100%);
+    border-radius: 3px;
+    font-family: "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+}
+
+main ul {
+    margin: 15px 0 0 0;
+}
+
+main ul li {
+    display: inline-block;
+    margin: 0 0 20px 24px;
+    text-align: center;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #206988;
+}
+
+main p {
+    font-size: 13px;
+    color: #1f2528;
+}
+
+main div.image {
+    width: 136px;
+    height: 127px;
+    border: 1px solid rgb(164, 174, 177);
+    border-radius: 7px;
+    background: white;
+    text-align: center;
+    line-height: 127px;
+}
+
+main div.image img {
+    vertical-align: middle;
+}
+
+main span {
+    font-family: "Arial Bold Italic", Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 24px;
+    color: #114165;
+}
+
+main span i {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.brands {
+    margin: 37px 0 22px 0;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    margin: 0 0 0 1px;
+    background: #213a4d;
+    background-image: linear-gradient( 0deg, rgba(47, 47, 47, 0.05) 0%, rgba(78, 78, 78, 0.05) 57%, rgba(108, 108, 108, 0.05) 100%);
+    border-radius: 2px;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+footer ul {
+    text-align: center;
+    line-height: 34px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 1px 0 6px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+footer ul li:nth-child(2n) {
+    vertical-align: middle;
+    color: #bec6c9;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #bec6c9;
+}
+
+footer a:hover {
+    color: #52abcb;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    color: #7f4740;
+    line-height: 18px;
 }
