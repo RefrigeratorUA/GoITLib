@@ -1,1 +1,1 @@
-https://github.com/RefrigeratorUA/GoITLib/tree/master/Lesson_JS1_2
+https://github.com/RefrigeratorUA/GoITLib/tree/master/Lesson_JS1_2/
