@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+
+}
+.fullscreen {
+    height: 100%;
+    color: white;
+}
+
+.header {
+    height: 20%;
+    background: blue;
+}
+.content {
+    height: 60%;
+}
+.left {
+    text-align: left;
+}
+
+.center {
+    margin: 0 auto;
+}
+.size {
+    height: 100%;
+    width: 46%;
+}
+.row .divider {
+    margin: 0;
+    padding: 0;
+    width: 8%;
+    height: 200px;
+    vertical-align: middle;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .fontsize {
+        font-size: 60%;
+        color: green;
+    }
+    img {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .fontsize {
+        font-size: 80%;
+        color: yellow;
+    }
+    img {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .fontsize {
+        font-size: 100%;
+        color: red;
+    }
+    img {
+        width: 50%;
+    }
+}
+.gradient {
+    background-image: linear-gradient( 180deg, rgba(32, 105, 136, 0.5) 0%, rgba(17, 65, 101, 0.5) 59%, rgba(15, 58, 94, 0.5) 85%, rgba(12, 50, 86, 0.5) 100%);
+}
+.backtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    font-size: 700%;
+    overflow: hidden;
+    line-height: 100%;
+}
+.arrow {
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
