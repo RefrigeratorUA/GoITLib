@@ -1,0 +1,137 @@
+.carousel {
+    background-color: #21252b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.wrap_jcarousel {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-sizing: content-box;
+    background-color: white;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+     /*Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+.jcarousel-prev {
+    position: absolute;
+    padding-left: 5px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 25px;
+    text-align: left;
+    line-height: 50px;
+    left: -25px;
+    top: 175px;
+}
+a.jcarousel-prev  {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    outline: none;
+
+}
+a.jcarousel-prev:active  {
+    color: #528bff;
+}
+
+.jcarousel-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding-right: 5px;
+    background: white;
+    border-radius: 25px;
+    text-align: right;
+    line-height: 50px;
+    right: -25px;
+    top: 175px;
+}
+a.jcarousel-next  {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    outline: none;
+}
+a.jcarousel-next:active  {
+    color: #528bff;
+}
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 8px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-right: 3px;
+    font-size: 0px;
+    min-width: 12px;
+    min-height: 12px;
+    opacity: 0.5;
+    outline: none;
+}
+.jcarousel-pagination a.active {
+    background: white;
+    border: 2px solid #528bff;
+    opacity: 1;
+}
+p.selected {
+    text-align: center;
+    background-color: #21252b;
+    margin-bottom: 0;
+}
+ul.check {
+    /*display: block;*/
+    float: left;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: right;
+    overflow: visible;
+}
+label {
+    cursor: pointer;
+}
+.checks {
+    float: left;
+    /*width: 150px;*/
+    background: #21252b;
+    /*background-color: red;*/
+}
+.buttons {
+    float: left;
+    /*min-width: 150px;*/
+}
+button.activate:not([disabled]) {
+    border: none;
+    outline: none;
+    margin: 10px;
+    height: 32px;
+    min-width: 150px;
+
+}
+input[type="checkbox"][disabled] {
+    left: 0;
+    cursor: not-allowed;
+}
