@@ -38,6 +38,7 @@
 .jq-checkbox.focused {
 	/*border: 1px solid red;*/
 }
+
 .jq-checkbox.disabled {
 	opacity: .1;
 }

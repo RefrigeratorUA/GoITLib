@@ -21,92 +21,124 @@
     </head>
 
     <body>
+        <nav>
+            <ul class="menu clearfix">
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сезон</a></li>
+                <li class="dropdown"> <a href="#">Команды</a>
+                    <ul class="submenu_1">
+                        <li><a href="#">Mercedes</a></li>
+                        <li><a href="#">Ferrari</a></li>
+                        <li class="dropdown"> <a href="#">Red Bull</a>
+                            <ul class="submenu_2">
+                                <li><a href="#">Daniel Ricciardo</a></li>
+                                <li><a href="#">Max Verstappen</a></li>
+                                <li><a href="#">Sebastian Vettel (ex)</a></li>
+                                <li><a href="#">Mark Webber (ex)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Williams</a></li>
+                        <li><a href="#">McLaren</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Машины</a></li>
+                <li><a href="#">Спонсоры</a></li>
+            </ul>
+        </nav>
         <div class="carousel">
-            <div class="wrap_jcarousel clearfix">
-                <a class="jcarousel-next" href="#">&#9658;</a>
-                <a class="jcarousel-prev" href="#">&#9668;</a>
+            <div class="wrap_jcarousel clearfix"> <a class="jcarousel-next" href="#">&#9658;</a> <a class="jcarousel-prev" href="#">&#9668;</a>
                 <div class="jcarousel">
                     <ul>
-                        <li><img src="./img/w07/1.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/2.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/3.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/4.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/5.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/6.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/7.jpg" height="400px" width="600px" alt="" /></li>
-                        <li><img src="./img/w07/8.jpg" height="400px" width="600px" alt="" /></li>
+                        <li><img src="./img/w07/1.jpg" height="400" width="600" alt="1" /></li>
+                        <li><img src="./img/w07/2.jpg" height="400" width="600" alt="2" /></li>
+                        <li><img src="./img/w07/3.jpg" height="400" width="600" alt="3" /></li>
+                        <li><img src="./img/w07/4.jpg" height="400" width="600" alt="4" /></li>
+                        <li><img src="./img/w07/5.jpg" height="400" width="600" alt="5" /></li>
+                        <li><img src="./img/w07/6.jpg" height="400" width="600" alt="6" /></li>
+                        <li><img src="./img/w07/7.jpg" height="400" width="600" alt="7" /></li>
+                        <li><img src="./img/w07/8.jpg" height="400" width="600" alt="8" /></li>
                     </ul>
                 </div>
                 <p class="jcarousel-pagination"></p>
             </div>
         </div>
-
-<form method="post" action="">
-    <p class="selected">
-        <select required>
-            <option></option>
-            <option>NICO ROSBERG</option>
-            <option>LEWIS HAMILTON</option>
-            <option>KIMI RÄIKKÖNEN</option>
-            <option>DANIEL RICCIARDO</option>
-            <option>SEBASTIAN VETTEL</option>
-            <option>FELIPE MASSA</option>
-            <option>ROMAIN GROSJEAN</option>
-            <option>DANIIL KVYAT</option>
-            <option>VALTTERI BOTTAS</option>
-            <option>MAX VERSTAPPEN</option>
-            <option>FERNANDO ALONSO</option>
-            <option>KEVIN MAGNUSSEN</option>
-            <option>NICO HULKENBERG</option>
-            <option>CARLOS SAINZ</option>
-            <option>SERGIO PEREZ</option>
-            <option>JENSON BUTTON</option>
-            <option>STOFFEL VANDOORNE</option>
-            <option>JOLYON PALMER</option>
-            <option>MARCUS ERICSSON</option>
-            <option>PASCAL WEHRLEIN</option>
-            <option>FELIPE NASR</option>
-            <option>ESTEBAN GUTIERREZ</option>
-            <option>RIO HARYANTO</option>
-        </select>
-    </p>
-
-<div class="checks">
-
-    <ul class="check">
-        <li>
-            <label for="brand1">Mercedes AMG F1 Team</label>
-            <input type="checkbox" class="" id="brand1">
-        </li>
-        <li>
-            <label for="brand2">Scuderia Ferrari</label>
-            <input type="checkbox" class="" id="brand2">
-        </li>
-        <li>
-            <label for="brand3">Red Bull Racing</label>
-            <input type="checkbox" class="" id="brand3">
-        </li>
-        <li>
-            <label for="brand4">Williams Martini Racing</label>
-            <input type="checkbox" class="" id="brand4">
-        </li>
-    </ul>
-<div class="buttons">
-    <ul>
-        <li>
-            <button type="submit" name="button1" class="activate">Деактивировать</button>
-        </li>
-        <li>
-            <button type="submit" name="button2">Active</button>
-        </li>
-    </ul>
-</div>
-
-
-</div>
-
-</form>
-
+        <form method="post" action="#">
+            <p class="selected">
+                <select required>
+                    <option></option>
+                    <option>NICO ROSBERG</option>
+                    <option>LEWIS HAMILTON</option>
+                    <option>KIMI RÄIKKÖNEN</option>
+                    <option>DANIEL RICCIARDO</option>
+                    <option>SEBASTIAN VETTEL</option>
+                    <option>FELIPE MASSA</option>
+                    <option>ROMAIN GROSJEAN</option>
+                    <option>DANIIL KVYAT</option>
+                    <option>VALTTERI BOTTAS</option>
+                    <option>MAX VERSTAPPEN</option>
+                    <option>FERNANDO ALONSO</option>
+                    <option>KEVIN MAGNUSSEN</option>
+                    <option>NICO HULKENBERG</option>
+                    <option>CARLOS SAINZ</option>
+                    <option>SERGIO PEREZ</option>
+                    <option>JENSON BUTTON</option>
+                    <option>STOFFEL VANDOORNE</option>
+                    <option>JOLYON PALMER</option>
+                    <option>MARCUS ERICSSON</option>
+                    <option>PASCAL WEHRLEIN</option>
+                    <option>FELIPE NASR</option>
+                    <option>ESTEBAN GUTIERREZ</option>
+                    <option>RIO HARYANTO</option>
+                </select>
+            </p>
+            <div class="checks clearfix">
+                <ul class="check_js">
+                    <li>
+                        <label for="brand1">Mercedes AMG Petronas Formula One Team</label>
+                        <input type="checkbox" class="only_js" id="brand1"> </li>
+                    <li>
+                        <label for="brand2">Scuderia Ferrari</label>
+                        <input type="checkbox" class="only_js" id="brand2"> </li>
+                    <li>
+                        <label for="brand3">Red Bull Racing</label>
+                        <input type="checkbox" class="only_js" id="brand3"> </li>
+                    <li>
+                        <label for="brand4">Williams Martini Racing</label>
+                        <input type="checkbox" class="only_js" id="brand4"> </li>
+                </ul>
+                <div class="buttons">
+                    <ul>
+                        <li>
+                            <button type="submit" name="button1" class="reverse">Переключить активность</button>
+                        </li>
+                        <li>
+                            <button type="submit" name="button2" class="activate">Деактивировать</button>
+                        </li>
+                        <li>
+                            <button type="submit" name="button3" class="selectall">Выбрать все</button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="check_css">
+                    <li>
+                        <input type="checkbox" class="only_css" id="brand_1">
+                        <label for="brand_1">Scuderia Toro Rosso</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="only_css" id="brand_2">
+                        <label for="brand_2">McLaren Honda Formula 1 Team</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="only_css" id="brand_3">
+                        <label for="brand_3">Sahara Force India F1 Team</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="only_css" id="brand_4">
+                        <label for="brand_4">Renault Sport Formula 1 Team</label>
+                    </li>
+                </ul>
+            </div>
+        </form>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -114,6 +146,7 @@
         <script src="./js/jquery.easing.1.3.js"></script>
         <script src="./js/jquery.jcarousel.min.js"></script>
         <script src="./js/jquery.formstyler.min.js"></script>
+        <script src="./js/jquery.color.js"></script>
         <script src="./js/script.js"></script>
     </body>
 

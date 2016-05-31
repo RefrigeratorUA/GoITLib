@@ -1,8 +1,16 @@
+body {
+    background-color: #21252b;
+}
+
+
+/*КАРУСЕЛЬ*/
+
 .carousel {
     background-color: #21252b;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .wrap_jcarousel {
     margin: 0 auto;
     position: relative;
@@ -12,14 +20,16 @@
     box-sizing: content-box;
     background-color: white;
 }
+
 .jcarousel {
     position: relative;
     overflow: hidden;
 }
+
 .jcarousel ul {
     width: 20000em;
     position: relative;
-     /*Optional, required in this case since it's a <ul> element */
+    /*Optional, required in this case since it's a <ul> element */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -28,6 +38,11 @@
 .jcarousel li {
     float: left;
 }
+
+a.jcarousel-next:hover, a.jcarousel-prev:hover {
+    color: #528bff;
+}
+
 .jcarousel-prev {
     position: absolute;
     padding-left: 5px;
@@ -40,14 +55,15 @@
     left: -25px;
     top: 175px;
 }
-a.jcarousel-prev  {
+
+a.jcarousel-prev {
     text-decoration: none;
     color: black;
     font-size: 15px;
     outline: none;
-
 }
-a.jcarousel-prev:active  {
+
+a.jcarousel-prev:active {
     color: #528bff;
 }
 
@@ -63,20 +79,24 @@ a.jcarousel-prev:active  {
     right: -25px;
     top: 175px;
 }
-a.jcarousel-next  {
+
+a.jcarousel-next {
     text-decoration: none;
     color: black;
     font-size: 15px;
     outline: none;
 }
-a.jcarousel-next:active  {
+
+a.jcarousel-next:active {
     color: #528bff;
 }
+
 .jcarousel-pagination {
     position: absolute;
     bottom: 0;
     left: 10px;
 }
+
 .jcarousel-pagination a {
     text-decoration: none;
     display: inline-block;
@@ -91,47 +111,270 @@ a.jcarousel-next:active  {
     opacity: 0.5;
     outline: none;
 }
+
 .jcarousel-pagination a.active {
     background: white;
     border: 2px solid #528bff;
     opacity: 1;
 }
+
+
+/*СЕЛЕКТ*/
+
 p.selected {
     text-align: center;
     background-color: #21252b;
     margin-bottom: 0;
 }
-ul.check {
-    /*display: block;*/
-    float: left;
-    padding: 10px;
-    margin: 0;
-    color: white;
-    text-align: right;
-    overflow: visible;
-}
+
+
+/*ЧЕКБОКС JS*/
+
 label {
     cursor: pointer;
 }
-.checks {
-    float: left;
-    /*width: 150px;*/
-    background: #21252b;
-    /*background-color: red;*/
-}
-.buttons {
-    float: left;
-    /*min-width: 150px;*/
-}
-button.activate:not([disabled]) {
-    border: none;
-    outline: none;
-    margin: 10px;
-    height: 32px;
-    min-width: 150px;
 
+input[type="checkbox"] {
+    margin: 0;
 }
+
 input[type="checkbox"][disabled] {
     left: 0;
     cursor: not-allowed;
+}
+
+.checks {
+    padding: 10px;
+    color: white;
+    background-color: #21252b;
+}
+
+.check_js {
+    float: left;
+    text-align: right;
+}
+
+.buttons {
+    float: left;
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+
+.buttons ul {
+    margin-bottom: 0;
+}
+
+button:not([disabled]) {
+    border: none;
+    outline: none;
+    margin: 5px;
+    height: 30px;
+    min-width: 175px;
+    border-radius: 3px;
+    color: black;
+}
+
+button:not([disabled]):hover {
+    background: #528bff;
+    color: white;
+}
+
+button:not([disabled]):active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*ЧЕКБОКС CSS*/
+
+.check_css {
+    position: relative;
+}
+
+ul.check_css {
+    float: right;
+    padding: 0;
+    text-align: right;
+}
+
+input.only_css[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+ul.check_css label:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+    background: url(../img/checks.png);
+}
+
+input.only_css[type=checkbox]:checked + label:after {
+    background-position: 0 -16px;
+}
+
+ul.check_css label:hover:after {
+    background-position: 0 -32px;
+}
+
+input.only_css[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -48px;
+}
+
+
+/*MENU*/
+
+nav {
+    margin-top: 4px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+nav a:focus {
+    outline: none;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    line-height: 44px;
+}
+
+nav ul li {
+    margin-left: -4px;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    border-left: 1px solid #21252b;
+    line-height: 40px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    border-left: none;
+}
+
+.menu > li:hover {
+    background-color: #528bff;
+    border-left: 1px solid black;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    line-height: 40px;
+}
+
+.menu {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu > li:hover:first-child {
+    margin-left: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+}
+
+.menu ul {
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    display: none;
+    z-index: 1;
+}
+
+.menu ul li {
+    width: 200px;
+    border-left: none;
+    border-right: none;
+    opacity: 0;
+}
+
+.dropdown > a:after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 15px;
+    left: -10px;
+    float: right;
+    border-top: 10px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.dropdown > a:hover:after {
+    border-top-color: white;
+}
+
+.menu li:hover > ul {
+    display: block;
+    background: white;
+}
+
+.submenu_1 a {
+    text-align: left;
+    padding-left: 10px;
+    line-height: 44px;
+}
+
+.submenu_1 a:focus {
+    line-height: 44px;
+}
+
+.submenu_1 li {
+    margin-left: 0px;
+    border-bottom: 1px solid black;
+}
+
+.submenu_1 li:last-child {
+    border-bottom: none;
+}
+
+.submenu_1 li:hover {
+    display: block;
+    background-color: #528bff;
+}
+
+.submenu_1 .dropdown > a:after {
+    content: '';
+    position: relative;
+    display: block;
+    float: right;
+    top: 17px;
+    left: -5px;
+    border-left: 10px solid black;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.submenu_1 .dropdown > a:hover:after {
+    border-left-color: white;
+}
+
+.submenu_1 ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    z-index: 2;
+}
+
+.submenu_1 li:hover > ul {
+    display: block;
+    background: white;
 }
