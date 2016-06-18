@@ -1,0 +1,126 @@
+body {
+    background-color: lightgrey;
+}
+
+.wrapper {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel {
+    display: inline-block;
+    padding: 10px 10px 0px;
+    font-size: 13px;
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    background-color: grey;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    width: 0;
+    height: 0;
+    margin-top: 85px;
+}
+
+.carousel-arrow-left {
+    margin-right: 10px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.carousel-arrow-right {
+    cursor: pointer;
+    margin-left: 10px;
+    border-top: 20px solid transparent;
+    border-left: 20px solid lightgreen;
+    border-bottom: 20px solid transparent;
+}
+
+.carousel-hider {
+    float: left;
+    width: 920px;
+    overflow: hidden;
+}
+
+.carousel-list {
+    position: relative;
+    width: 10000px;
+}
+
+.carousel-element {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.border {
+    width: 300px;
+    border: 1px solid lightgreen;
+    box-shadow: 1px 1px 10px 0px rgba(255, 215, 0, 0.4);
+}
+
+.carousel-element img {
+    max-height: 198px;
+}
+
+.carousel-element p {
+    margin: 0;
+    line-height: 30px;
+}
+
+.carousel-element p::selection {
+    display: none;
+}
+
+
+/* Template */
+
+.main {
+    width: 512px;
+    margin: 5px auto 40px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 3px 1px rgba(75, 75, 75, 0.5);
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+    font-style: normal;
+    color: black;
+    box-sizing: content-box;
+}
+
+.main h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 22pt;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.photo {
+    display: block;
+    height: 130px;
+    margin: 24px auto 0;
+}
+
+.main p {
+    margin: 1em 0 1em 12px;
+}
+
+.main hr {
+    border: none;
+    height: 1px;
+    margin-bottom: 28px;
+    color: rgb(122, 122, 122);
+    background-color: rgb(122, 122, 122);
+}
+
+.main ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 40px;
+    list-style: disc;
+}
