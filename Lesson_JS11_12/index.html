@@ -84,26 +84,23 @@
         </div>
         <script type="text/template" id="profile">
             <div class="main">
-                <h1><%= name %></h1> <img class="photo" src=<%=p hoto %> alt="Image not found" title="Photo">
-                <p>
-                    <%= work %>
-                </p>
+                <h1><%= name %></h1>
+                <img class="photo" src=<%= photo %> alt="Image not found" title="Photo">
+                <p> <%= work %> </p>
                 <hr>
                 <p> Хочу учить фронтенд потому что: </p>
                 <ul>
                     <% for (var i=0; i<meta.length; i++) { %>
-                        <li>
-                            <%= meta[i] %>
-                        </li>
-                        <% }; %>
+                        <li><%= meta[i] %></li>
+                    <% }; %>
                 </ul>
                 <hr>
-                <p> Мой контактный телефон
-                    <br>
+                <p> Мой контактный телефон <br>
                     <%= phone %>
                 </p>
-                <p> Мой профиль в чебурашке
-                    <br> <a href=<%=s ocial %> target="_blank">vk.com</a> </p>
+                <p> Мой профиль в чебурашке <br>
+                    <a href=<%= social %> target="_blank">vk.com</a>
+                </p>
                 <hr>
                 <p>
                     <%= ican %>
