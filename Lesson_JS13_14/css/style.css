@@ -1,0 +1,134 @@
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+    color: black;
+}
+.checkbox {
+    margin: 0 0 0 25px;
+}
+
+label {
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.check-style:not(checked) {
+    display: none;
+    opacity: 0;
+}
+
+.check-style:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+
+.check-style:not(checked) + label::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #cae3f7;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.check-style:checked + label::after {
+    content: '\2714';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="button"] {
+    width: 326px;
+    height: 54px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 2px;
+    background: #cae3f7;
+    font-size: 19px;
+}
+#modal {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    margin-bottom: 50px;
+    padding: 10px;
+    z-index: 2;
+    opacity: 0;
+    border: 2px solid black;
+    border-radius: 2px;
+    background: #fff;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+}
+#modal h4 {
+    text-align: center;
+}
+#modal b {
+    float: right;
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+#modal p {
+    padding-left: 20px;
+    font-size: 14px;
+}
+#modal i {
+    font-size: 14px;
+    font-weight: bold;
+}
+#modal #modal_close {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #cae3f7;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 22px;
+    color: black;
+}
+#modal #modal_close:hover {
+    background-color: pink;
+}
+#modal #modal_close:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 10px;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    cursor: wait;
+    background-color: red;
+}
