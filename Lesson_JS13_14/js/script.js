@@ -22,6 +22,9 @@ $(function() {
     } catch (error) {
         console.log('Error data! Try later.', error);
     }
+    for (var i=0; i<test.arrQuestions.length; i++) {
+        console.log("Правильный ответ на Вопрос №" + (i+1) + ": ", test.arrCorrectAnsw[i][0]);
+    };
     // var test = question;  //для IE (локально)
     var $letsGo = function() {
 
@@ -70,7 +73,7 @@ $(function() {
             data : []
         };
         for (var i=0; i<test.arrQuestions.length; i++) {
-            console.log("Правильный ответ на Вопрос №" + (i+1) + ": ", test.arrCorrectAnsw[i][0]);
+            // console.log("Правильный ответ на Вопрос №" + (i+1) + ": ", test.arrCorrectAnsw[i][0]);
             count=0;
             var n = 0;
             while (count<$labels.length && $result[i]!="error") {
