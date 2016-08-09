@@ -2,30 +2,30 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     concat: {
-    //    options: {
-    //      separator: ';'
-    //    },
-    js: {
-        src: ['src/js/*.js'],
-        dest: 'dest/js/script.main.js'
+       js: {
+           options: {
+               separator: ';'
+           },
+           src: ['src/js/*.js'],
+           dest: 'dest/js/script.main.js'
+       },
+       css: {
+           src: ['src/css/*.css'],
+           dest: 'dest/css/style.main.css'
+       }
     },
-    css: {
-        src: ['src/css/*.css'],
-        dest: 'dest/css/style.main.css'
-    }
-   },
-   uglify: {
+    uglify: {
        js: {
            src: ['dest/js/script.main.js'],
            dest: 'dest/js/script.main.min.js'
        }
-   },
-   cssmin: {
+    },
+    cssmin: {
        css: {
            src: ['dest/css/style.main.css'],
            dest: 'dest/css/style.main.min.css'
        }
-   }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');

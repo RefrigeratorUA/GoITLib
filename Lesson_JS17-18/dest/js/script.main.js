@@ -2361,10 +2361,8 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
-
-console.log('this is file');
-
-(function(){
+;console.log('this is file')
+;(function(){
     var cache = {};
 
     this.tmpl = function tmpl(str, data){
