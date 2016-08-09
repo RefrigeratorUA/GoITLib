@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+}
+div#board {
+    position: relative;
+    width: 820px;
+    height: 690px;
+    margin: auto;
+    background: url("../img/board.jpg") no-repeat;
+    background-size: contain;
+}
+div#messageArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(83, 175, 19);
+}
+table {
+    position: absolute;
+    top: 79px;
+    left: 137px;
+    border-spacing: 0px;
+}
+td {
+    position: relative;
+    width: 77px;
+    height: 77px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(110, 218, 35);
+    background-position: center center;
+}
+td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+td:hover::after {
+    content: attr(coord);
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+td:active {
+    background-color: rgba(255, 0, 0, 0.1);
+    background-size: 70%;
+}
+td:active::after {
+    content: attr(coord);
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+form {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    padding: 10px;
+    background-color: rgb(83, 175, 19);
+}
+form input {
+    background-color: rgb(152, 207, 113);
+    border-color: rgb(83, 175, 19);
+    font-size: 16px;
+}
+.hit {
+    background: url("../img/fire1.png") no-repeat center center;
+    background-size: 90%;
+}
+.miss {
+    background: url("../img/lose1.png") no-repeat center center;
+    background-size: 90%;
+    opacity: .4;
+    transition: 1s;
+}

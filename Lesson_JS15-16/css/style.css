@@ -28,10 +28,12 @@ html, body {
     left: 108px;
     height: 17px;
 }
+.search--size {
+    max-width: 516px;
+}
 .search--text {
     padding: 5px 9px;
     height: 38px;
-    max-width: 516px;
     margin: 0 auto;
     border-radius: 0;
     border: none;
@@ -83,9 +85,53 @@ html, body {
     color: #222;
 }
 .top_main {
+    min-width: 670px;
     display: none;
+    padding-top: 10px;
     height: 60px;
     background-color: #f1f1f1;
     border-bottom: 1px solid #666;
     border-color: #e5e5e5;
+}
+.search-input--size {
+    min-width: 502px;
+}
+.btn--search {
+    border: none;
+    height: 38px;
+    width: 38px;
+    background-color: #4285f4;
+    font-size: 15px;
+    color: white;
+    border-radius: 2px;
+}
+.btn--search:hover {
+    background-color: #3b78e7;
+    color: white;
+}
+.btn--search:focus {
+    outline: none;
+    background-color: #4285f4;
+    color: white;
+}
+.btn--search:focus:hover {
+    background-color: #3b78e7;
+    color: white;
+}
+.btn--search:active:focus {
+    outline: none;
+    background-color: #3367d6;
+    color: white;
+}
+.input-group--size {
+    max-width: 542px;
+}
+.img-google {
+    display: block;
+    margin: 3px 18px 0 13px;
+    float: left;
+    width: 95px;
+    height: 37px;
+    background: url('../img/nav_logo242.png');
+    background-position: 0px -42px;
 }

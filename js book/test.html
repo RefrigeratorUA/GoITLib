@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cars</title>
+    <style>
+    </style>
+    <script>
+        window.onload = function() {
+            function Car(params) {
+                this.make = params.make;
+                this.model = params.model;
+                this.year = params.year;
+                this.color = params.color;
+                this.passengers = params.passengers;
+                this.convertible = params.convertible;
+                this.mileage = params.mileage;
+                this.started = false;
+                this.start = function() {
+                    this.started = true;
+                };
+                this.stop = function() {
+                    this.started = false;
+                };
+                this.drive = function() {
+                     if (this.started) {
+                         console.log(this.make + " " + this.model + " goes zoom zoom!");
+                     } else {
+                         console.log("Start the engine first.");
+                     }
+                }
+            };
+
+            function Dog(name, breed, weight) {
+                this.name = name;
+                this.breed = breed;
+                this.weight = weight;
+                this.bark = function() {
+                    if (this.weight > 25) {
+                        alert(this.name + " says Woof!");
+                    } else {
+                        alert(this.name + " says Yip!");
+                    }
+                }
+            };
+
+            var cadiParams = {
+                make: "GM",
+                model: "Cadillac",
+                year: 1955,
+                color: "tan",
+                passengers: 5,
+                convertible: false,
+                mileage: 12892
+            };
+
+            var limoParams = {
+                make: "Webville Motors",
+                model: "limo",
+                year: 1983,
+                color: "black",
+                passengers: 12,
+                convertible: true,
+                mileage: 21120
+            };
+
+            var limo = new Car(limoParams);
+            var limoDog = new Dog("Rhapsody In Blue", "Poodle", 40);
+
+            console.log(limo.make + " " + limo.model + " is a " + typeof limo);
+            console.log(limoDog.name + " is a " + typeof limoDog);
+
+            var cadi = new Car(cadiParams);
+            var chevy = new Car("Chevy", "Bel Air", 1957, "red", 2, false, 1021);
+            var taxi = new Car("Webville Motors", "Taxi", 1955, "yellow", 4, false, 281341);
+            var fiat = new Car("Fiat", "500", 1957, "Medium Blue", 2, false, 88000);
+
+            var testCar = new Car("Webville Motors", "Test Car", 2014, "marine", 2, true, 21);
+
+            var cars = [chevy, cadi, taxi, fiat, testCar];
+
+            for(var i = 0; i < cars.length; i++) {
+                cars[i].start();
+                cars[i].drive();
+                cars[i].drive();
+                cars[i].stop();
+            }
+
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

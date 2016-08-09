@@ -11,6 +11,7 @@
         <link href="./css/reset.css" rel="stylesheet">
         <link href="./css/bootstrap.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -21,21 +22,50 @@
 
     <body>
         <div class="top_main">
-            <input type="text" class="form-control search--text" id="search_2">
-        </div>
+            <a class="img-google" href="index.html"></a>
+            <div class="input-group input-group--size">
+              <input type="text" class="form-control search--text search-input--size" id="search_2">
+              <span class="input-group-btn">
+                <button class="btn btn-default btn--search" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+
+        <div id='cse-search-form' style='width: 100%;'>Loading</div>
+            <script src='https://www.google.com/jsapi' type='text/javascript'></script>
+            <script type='text/javascript'>
+                google.load('search', '1', {language: 'en'});
+                google.setOnLoadCallback(function() {
+                  var customSearchOptions = {};
+                  var orderByOptions = {};
+                  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+                  customSearchOptions['enableOrderBy'] = true;
+                  customSearchOptions['orderByOptions'] = orderByOptions;
+                  var imageSearchOptions = {};
+                  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+                  customSearchOptions['enableImageSearch'] = true;
+                  var customSearchControl =   new google.search.CustomSearchControl('006640253466900248042:clhywqfbqoi', customSearchOptions);
+                  customSearchControl.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+                  var options = new google.search.DrawOptions();
+                  options.enableSearchboxOnly('https://www.google.com/cse?cx=006640253466900248042:clhywqfbqoi');
+                  options.setAutoComplete(true);
+                  customSearchControl.draw('cse-search-form', options);
+                }, true);
+        </script>
+
+
+</div>
         <div class="main">
             <div class="center ">
                 <div class="logo">
                     <img src="./img/googlelogo_color_272x92dp.png" alt="Google" />
                     <img class="goit" src="./img/logo_orange_h-1000.png" alt="GoIT" />
                 </div>
-                <input type="text" class="form-control search--text" id="search_1">
+                <input type="text" class="form-control search--text search--size" id="search_1">
                 <button class="btn btn-default search--btn" type="button">Поиск в Google</button>
             </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="./js/bootstrap.js"></script>
         <script src="./js/template.js"></script>
         <script src="./js/script.js"></script>

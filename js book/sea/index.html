@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Battleship v.0.0.1</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div id="board">
+            <div id="messageArea"></div>
+            <table id="grid">
+                <tr>
+                    <td id="00" coord="A0"></td><td id="01" coord="A1"></td><td id="02" coord="A2"></td><td id="03" coord="A3"></td>
+                    <td id="04" coord="A4"></td><td id="05" coord="A5"></td><td id="06" coord="A6"></td>
+                </tr>
+                <tr>
+                    <td id="10" coord="B0"></td><td id="11" coord="B1"></td><td id="12" coord="B2"></td><td id="13" coord="B3"></td>
+                    <td id="14" coord="B4"></td><td id="15" coord="B5"></td><td id="16" coord="B6"></td>
+                </tr>
+                <tr>
+                    <td id="20" coord="C0"></td><td id="21" coord="C1"></td><td id="22" coord="C2"></td><td id="23" coord="C3"></td>
+                    <td id="24" coord="C4"></td><td id="25" coord="C5"></td><td id="26" coord="C6"></td>
+                </tr>
+                <tr>
+                    <td id="30" coord="D0"></td><td id="31" coord="D1"></td><td id="32" coord="D2"></td><td id="33" coord="D3"></td>
+                    <td id="34" coord="D4"></td><td id="35" coord="D5"></td><td id="36" coord="D6"></td>
+                </tr>
+                <tr>
+                    <td id="40" coord="E0"></td><td id="41" coord="E1"></td><td id="42" coord="E2"></td><td id="43" coord="E3"></td>
+                    <td id="44" coord="E4"></td><td id="45" coord="E5"></td><td id="46" coord="E6"></td>
+                </tr>
+                <tr>
+                    <td id="50" coord="F0"></td><td id="51" coord="F1"></td><td id="52" coord="F2"></td><td id="53" coord="F3"></td>
+                    <td id="54" coord="F4"></td><td id="55" coord="F5"></td><td id="56" coord="F6"></td>
+                </tr>
+                <tr>
+                    <td id="60" coord="G0"></td><td id="61" coord="G1"></td><td id="62" coord="G2"></td><td id="63" coord="G3"></td>
+                    <td id="64" coord="G4"></td><td id="65" coord="G5"></td><td id="66" coord="G6"></td>
+                </tr>
+            </table>
+            <form>
+                <input type="text" id="guessInput" placeholder="E2" autocomplete="off">
+                <input type="button" id="fireButton" value="Fire!">
+            </form>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
