@@ -1,0 +1,7 @@
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3 well well-sm">
+        <ul data-ng-repeat="event in userGroup.events" class="list-group">
+            <li data-ng-click="notify(event.descr);" data-ng-class="{grey : peopleHere<10}" class="list-group-item">{{event.name}}</li>
+        </ul>
+    </div>
+</div>

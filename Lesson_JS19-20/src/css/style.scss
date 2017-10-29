@@ -1,0 +1,286 @@
+@import 'variables';
+@import 'mixins';
+
+html, body {
+    width: 100%;
+}
+
+.header {
+    width: $main-width;
+    margin: 0 auto;
+    &__top {
+        padding: 36px 5px;
+        @include clearfix;
+        &__logo-position {
+            float: left;
+        }
+        &__social-list-position {
+            float: right;
+            margin-top: 12px;
+        }
+    }
+    &__nav {
+        background: $nav-background;
+        @include clearfix;
+        &__menu-position {
+            float: left;
+        }
+        &__search-form-position {
+            float: right;
+            margin: 8px 8px 0 0;
+        }
+    }
+    &__slider {
+        margin-top: 20px;
+        width: $main-width;
+        height: $slider-height;
+        background: #dedede;
+        overflow: hidden;
+    }
+}
+//Slider
+.slider {
+    display: block;
+    %bg-img {
+        background-position: 100% 50%, -1px -1px, 50% 50%;
+        background-size: auto, auto, cover;
+        background-blend-mode: normal, overlay, normal;
+        background-repeat: no-repeat;
+        animation: position 3s linear;
+        @keyframes position {
+            0% { background-position: (-$main-width) 50%, -1px (-$slider-height), 50% 50%;
+            }
+            100% { background-position: 100% 50%, -1px -1px, 50% 50%;
+            }
+        }
+    }
+    &__item {
+        // display: inline-block;
+        float: left;
+        width: $main-width;
+        height: $slider-height;
+        &--img1 {
+            background:
+            url('../img/grid.png'),
+            url('../img/rect.png'),
+            url('../img/slide1.jpg');
+            @extend %bg-img;
+            // display: none;
+        }
+        &--img2 {
+            background:
+            url('../img/grid.png'),
+            url('../img/rect.png'),
+            url('../img/slide2.jpg');
+            @extend %bg-img;
+            display: none;
+        }
+        &--img3 {
+            background:
+            url('../img/grid.png'),
+            url('../img/rect.png'),
+            url('../img/slide3.jpg');
+            @extend %bg-img;
+            display: none;
+        }
+    }
+}
+
+//  Block Logo
+.logo {
+    display: block;
+}
+// Block Список социальных сетей
+.social-list {
+    display: block;
+    &__item {
+        float: left;
+        margin-left: 16px;
+        list-style: none;
+    }
+}
+// Block Ссылка-изображение социальной сети
+.social-link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/sprite-soc.png');
+    &--s {
+        background-position: 16px 0px;
+        &:hover {
+            background-position: 16px 16px;
+        }
+    }
+    &--i {
+        background-position: 32px 0px;
+        &:hover {
+            background-position: 32px 16px;
+        }
+    }
+    &--r {
+        background-position: 48px 0px;
+        &:hover {
+            background-position: 48px 16px;
+        }
+    }
+    &--t {
+        background-position: 64px 0px;
+        &:hover {
+            background-position: 64px 16px;
+        }
+    }
+    &--f {
+        background-position: 0px 0px;
+        &:hover {
+            background-position: 0px 16px;
+        }
+    }
+}
+// Block Главное меню
+.menu {
+    display: block;
+    line-height: 56px;
+    @include clearfix;
+    &__item {
+        float: left;
+        list-style: none;
+        border-right: 1px solid $menu-divider-color;
+    }
+    &__link {
+        display: block;
+        padding: 0 41px;
+        text-decoration: none;
+        color: $menu-color;
+        font-family: $main-font;
+        font-size: $menu-font-size;
+        &:hover {
+            color: $menu-color-hover;
+        }
+        &:focus {
+            color: $menu-color;
+            background: $menu-background-focus;
+        }
+    }
+}
+// Block Форма поиска
+.search-form {
+    %form-base {
+        padding: 0;
+        outline: none;
+        border: none;
+        line-height: $searh-height;
+        background: transparent;
+        font-family: $main-font;
+        color: $search-color;
+    }
+    padding: 0 14px;
+    width: 211px;
+    height: $searh-height;
+    border: 1px solid black;
+    background: $search-background;
+    @include clearfix;
+    &__text {
+        @extend %form-base;
+        float: left;
+        width: 185px;
+        font-size: 12px;
+        @include placeholder($search-color);
+    }
+    &__submit {
+        @extend %form-base;
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+// MUST HAVE
+// %btn-default {
+//     border: 1px solid currentColor;
+//     @include border-radius(10px);
+//     background: none;
+//     outline: none;
+//     transition-duration: .25s;
+//     cursor: pointer;
+//     margin: 30px;
+//     padding: 10px;
+//
+//     &:hover {
+//         color: white;
+//         background: black;
+//     }
+// }
+// %btn--first {
+//     @extend %btn-default;
+//     color: red;
+//     font-size: 12px;
+// }
+// %btn--second {
+//     @extend %btn-default;
+//     color: green;
+//     font-size: 10px;
+// }
+//
+// .button {
+//     width: 700px;
+//     margin: 20px auto;
+//     padding: 20px;
+//     border: 1px solid black;
+//     &__item {
+//         margin: 10px;
+//         padding: 10px;
+//         &--first {
+//             @extend %btn--first;
+//             font-size: 20px;
+//         }
+//         &--second {
+//             @extend %btn--second;
+//             font-size: 30px;
+//             &:hover {
+//                 color: yellow;
+//                 background: blue;
+//             }
+//         }
+//     }
+//
+// }
+//
+// body {
+//     font: 100% $font-stack;
+//     color: $primary-color;
+// }
+// h1 {
+//     color: $red;
+//     font-size: 30px;
+// }
+//
+// .menu {
+//     display: block;
+//     &:after {
+//         content: '';
+//         display: block;
+//         height: 0;
+//         clear: both;
+//         visibility: hidden;
+//     }
+//     &__item {
+//         float: left;
+//         list-style: none;
+//         margin-left: 5px;
+//         padding: 20px;
+//         border: 1px solid $link;
+//         @include border-radius(5px);
+//         &--first {
+//             background: red;
+//         }
+//     }
+//     &__link {
+//         color: $link;
+//         text-decoration: none;
+//         &--last {
+//             color: $link + #f00;
+//             text-decoration: line-through;
+//         }
+//     }
+// }

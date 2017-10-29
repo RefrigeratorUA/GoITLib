@@ -1,0 +1,26 @@
+body {
+    /*background-color: blue;*/
+}
+div {
+    text-align: center;
+}
+p {
+    margin: 10px 0;
+}
+.col-md-3 {
+    background-color: lightgreen;
+}
+.col-md-4 {
+    background-color: black;
+}
+
+.col-md-6 {
+    background-color: yellow;
+}
+.col-md-9 {
+    background-color: red;
+}
+
+.col-md-12 {
+    background-color: lightgrey;
+}
