@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>SCSS, BEM, jQuery, lodash</title>
+        <!-- Bootstrap -->
+        <!-- <link href="./dest/css/style.main.min.css" rel="stylesheet"> -->
+        <link href="./dest/css/reset.css" rel="stylesheet">
+        <link href="./src/css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <a class="logo header__top__logo-position" href="#"><img src="./src/img/logo.png" alt="LOGO" /></a>
+                <ul class="social-list header__top__social-list-position">
+                    <li class="social-list__item"><a class="social-link social-link--f" href="#"></a></li>
+                    <li class="social-list__item"><a class="social-link social-link--t" href="#"></a></li>
+                    <li class="social-list__item"><a class="social-link social-link--r" href="#"></a></li>
+                    <li class="social-list__item"><a class="social-link social-link--i" href="#"></a></li>
+                    <li class="social-list__item"><a class="social-link social-link--s" href="#"></a></li>
+                </ul>
+            </div>
+            <nav class="header__nav">
+                <ul class="menu header__nav__menu-position">
+                    <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">FEATURES</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">NEWS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">SHOP</a></li>
+                </ul>
+                <form class="search-form header__nav__search-form-position" action="#" method="post">
+                    <input class="search-form__text" autocomplete="off" placeholder="Search..." type="text" name="search" value="">
+                    <input class="search-form__submit" type="submit" name="submit" value="&#128269;">
+                </form>
+            </nav>
+            <div class="header__slider">
+                <ul class="slider">
+                    <li class="slider__item slider__item--img1"></li>
+                    <li class="slider__item slider__item--img2"></li>
+                    <li class="slider__item slider__item--img3"></li>
+                </ul>
+                <!-- <img class="slider-img" src="./src/img/rect.png" alt="" /> -->
+            </div>
+        </header>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="./dest/js/lodash.js"></script>
+        <script data-main="./dest/js/app.js" src="./dest/js/require.js"></script>
+        <script src="./src/js/script.js"></script>
+        <!-- <script src="./dest/js/script.main.min.js"></script> -->
+    </body>
+
+</html>

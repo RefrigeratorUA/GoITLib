@@ -1,0 +1,166 @@
+html, body {
+  width: 100%; }
+
+.header {
+  width: 1160px;
+  margin: 0 auto; }
+  .header__top {
+    padding: 36px 5px; }
+    .header__top:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .header__top__logo-position {
+      float: left; }
+    .header__top__social-list-position {
+      float: right;
+      margin-top: 12px; }
+  .header__nav {
+    background: #2a2d32; }
+    .header__nav:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .header__nav__menu-position {
+      float: left; }
+    .header__nav__search-form-position {
+      float: right;
+      margin: 8px 8px 0 0; }
+  .header__slider {
+    margin-top: 20px;
+    width: 1160px;
+    height: 470px;
+    background: #dedede;
+    overflow: hidden; }
+
+.slider {
+  display: block; }
+  .slider .slider__item--img1, .slider .slider__item--img2, .slider .slider__item--img3 {
+    background-position: 100% 50%, -1px -1px, 50% 50%;
+    background-size: auto, auto, cover;
+    background-blend-mode: normal, overlay, normal;
+    background-repeat: no-repeat;
+    animation: position 3s linear; }
+@keyframes position {
+  0% {
+    background-position: -1160px 50%, -1px -470px, 50% 50%; }
+  100% {
+    background-position: 100% 50%, -1px -1px, 50% 50%; } }
+  .slider__item {
+    float: left;
+    width: 1160px;
+    height: 470px; }
+    .slider__item--img1 {
+      background: url("../img/grid.png"), url("../img/rect.png"), url("../img/slide1.jpg"); }
+    .slider__item--img2 {
+      background: url("../img/grid.png"), url("../img/rect.png"), url("../img/slide2.jpg");
+      display: none; }
+    .slider__item--img3 {
+      background: url("../img/grid.png"), url("../img/rect.png"), url("../img/slide3.jpg");
+      display: none; }
+
+.logo {
+  display: block; }
+
+.social-list {
+  display: block; }
+  .social-list__item {
+    float: left;
+    margin-left: 16px;
+    list-style: none; }
+
+.social-link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/sprite-soc.png"); }
+  .social-link--s {
+    background-position: 16px 0px; }
+    .social-link--s:hover {
+      background-position: 16px 16px; }
+  .social-link--i {
+    background-position: 32px 0px; }
+    .social-link--i:hover {
+      background-position: 32px 16px; }
+  .social-link--r {
+    background-position: 48px 0px; }
+    .social-link--r:hover {
+      background-position: 48px 16px; }
+  .social-link--t {
+    background-position: 64px 0px; }
+    .social-link--t:hover {
+      background-position: 64px 16px; }
+  .social-link--f {
+    background-position: 0px 0px; }
+    .social-link--f:hover {
+      background-position: 0px 16px; }
+
+.menu {
+  display: block;
+  line-height: 56px; }
+  .menu:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .menu__item {
+    float: left;
+    list-style: none;
+    border-right: 1px solid #181a1d; }
+  .menu__link {
+    display: block;
+    padding: 0 41px;
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu Condenset Regular", sans-serif;
+    font-size: 12px; }
+    .menu__link:hover {
+      color: #f4b60d; }
+    .menu__link:focus {
+      color: white;
+      background: #248cec; }
+
+.search-form {
+  padding: 0 14px;
+  width: 211px;
+  height: 36px;
+  border: 1px solid black;
+  background: #35383c; }
+  .search-form .search-form__text, .search-form .search-form__submit {
+    padding: 0;
+    outline: none;
+    border: none;
+    line-height: 36px;
+    background: transparent;
+    font-family: "Ubuntu Condenset Regular", sans-serif;
+    color: #626466; }
+  .search-form:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .search-form__text {
+    float: left;
+    width: 185px;
+    font-size: 12px; }
+    .search-form__text::-webkit-input-placeholder {
+      color: #626466; }
+    .search-form__text::-moz-placeholder {
+      color: #626466; }
+    .search-form__text:-moz-placeholder {
+      color: #626466; }
+    .search-form__text:-ms-input-placeholder {
+      color: #626466; }
+  .search-form__submit {
+    float: right;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

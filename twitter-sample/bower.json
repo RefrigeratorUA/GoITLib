@@ -1,0 +1,24 @@
+{
+  "name": "twitter-sample",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "anonymous node/sails user"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RefrigeratorUA/GoITLib",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "bootstrap": "^3.3.7",
+      "angular": "^1.5.8",
+      "angular-resource": "^1.5.8",
+      "angular-route": "^1.5.8"
+  }
+}
