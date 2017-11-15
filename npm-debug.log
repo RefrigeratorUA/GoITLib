@@ -1,0 +1,1478 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'linter' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.5
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData linter
+8 silly fetchNamedPackageData linter
+9 silly mapToRegistry name linter
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'linter',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'linter',
+12 silly mapToRegistry   name: 'linter',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/linter
+14 verbose request uri https://registry.npmjs.org/linter
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 18:53:33
+17 verbose request id 2268c0a5896c0fb8
+18 verbose etag W/"4d89ffff-1b69"
+19 verbose lastModified Wed, 23 Mar 2011 14:13:19 GMT
+20 http request GET https://registry.npmjs.org/linter
+21 http 304 https://registry.npmjs.org/linter
+22 verbose headers { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"4d89ffff-1b69"',
+22 verbose headers   age: '0',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-hhn1550-HHN',
+22 verbose headers   'x-cache': 'MISS',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1509296015.347781,VS0,VE2',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"4d89ffff-1b69"',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-hhn1550-HHN',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1509296015.347781,VS0,VE2',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/linter from cache
+25 verbose get saving linter to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\linter\.cache.json
+26 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule linter@0.0.7 checking installable status
+40 silly cache add args [ 'linter', null ]
+41 verbose cache add spec linter
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'linter',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'linter',
+42 silly cache add   name: 'linter',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed linter@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for linter
+45 info addNameTag [ 'linter', 'latest' ]
+46 silly mapToRegistry name linter
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'linter',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'linter',
+49 silly mapToRegistry   name: 'linter',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/linter
+51 verbose addNameTag registry:https://registry.npmjs.org/linter not in flight; fetching
+52 verbose get https://registry.npmjs.org/linter not expired, no request
+53 silly addNameTag next cb for linter with tag latest
+54 silly addNamed linter@0.0.7
+55 verbose addNamed "0.0.7" is a plain semver version for linter
+56 silly cache afterAdd linter@0.0.7
+57 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\linter\0.0.7\package\package.json not in flight; writing
+58 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+59 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\linter\0.0.7\package\package.json written
+60 silly fetchNamedPackageData argsparser
+61 silly mapToRegistry name argsparser
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'argsparser',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'argsparser',
+64 silly mapToRegistry   name: 'argsparser',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/argsparser
+66 silly fetchNamedPackageData sharedjs
+67 silly mapToRegistry name sharedjs
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry data Result {
+70 silly mapToRegistry   raw: 'sharedjs',
+70 silly mapToRegistry   scope: null,
+70 silly mapToRegistry   escapedName: 'sharedjs',
+70 silly mapToRegistry   name: 'sharedjs',
+70 silly mapToRegistry   rawSpec: '',
+70 silly mapToRegistry   spec: 'latest',
+70 silly mapToRegistry   type: 'tag' }
+71 silly mapToRegistry uri https://registry.npmjs.org/sharedjs
+72 verbose request uri https://registry.npmjs.org/argsparser
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 18:53:34
+75 verbose etag W/"5645a2ba-1a59"
+76 verbose lastModified Fri, 13 Nov 2015 08:43:38 GMT
+77 http request GET https://registry.npmjs.org/argsparser
+78 verbose request uri https://registry.npmjs.org/sharedjs
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 18:53:34
+81 verbose etag W/"4d89d88c-9fc"
+82 verbose lastModified Wed, 23 Mar 2011 11:25:00 GMT
+83 http request GET https://registry.npmjs.org/sharedjs
+84 http 304 https://registry.npmjs.org/sharedjs
+85 verbose headers { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: 'W/"4d89d88c-9fc"',
+85 verbose headers   age: '0',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-hhn1528-HHN',
+85 verbose headers   'x-cache': 'MISS',
+85 verbose headers   'x-cache-hits': '0',
+85 verbose headers   'x-timer': 'S1509296016.633148,VS0,VE1',
+85 verbose headers   vary: 'Accept-Encoding, Accept' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: 'W/"4d89d88c-9fc"',
+86 silly get     age: '0',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-hhn1528-HHN',
+86 silly get     'x-cache': 'MISS',
+86 silly get     'x-cache-hits': '0',
+86 silly get     'x-timer': 'S1509296016.633148,VS0,VE1',
+86 silly get     vary: 'Accept-Encoding, Accept' } ]
+87 verbose etag https://registry.npmjs.org/sharedjs from cache
+88 verbose get saving sharedjs to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\sharedjs\.cache.json
+89 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+90 silly resolveWithNewModule sharedjs@0.0.2 checking installable status
+91 silly cache add args [ 'sharedjs@>= 0.0.1', null ]
+92 verbose cache add spec sharedjs@>= 0.0.1
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'sharedjs@>= 0.0.1',
+93 silly cache add   scope: null,
+93 silly cache add   escapedName: 'sharedjs',
+93 silly cache add   name: 'sharedjs',
+93 silly cache add   rawSpec: '>= 0.0.1',
+93 silly cache add   spec: '>=0.0.1',
+93 silly cache add   type: 'range' }
+94 silly addNamed sharedjs@>=0.0.1
+95 verbose addNamed ">=0.0.1" is a valid semver range for sharedjs
+96 silly addNameRange { name: 'sharedjs', range: '>=0.0.1', hasData: false }
+97 silly mapToRegistry name sharedjs
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'sharedjs',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'sharedjs',
+100 silly mapToRegistry   name: 'sharedjs',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/sharedjs
+102 verbose addNameRange registry:https://registry.npmjs.org/sharedjs not in flight; fetching
+103 http 304 https://registry.npmjs.org/argsparser
+104 verbose headers { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+104 verbose headers   via: '1.1 varnish',
+104 verbose headers   'cache-control': 'max-age=300',
+104 verbose headers   etag: 'W/"5645a2ba-1a59"',
+104 verbose headers   age: '0',
+104 verbose headers   connection: 'keep-alive',
+104 verbose headers   'x-served-by': 'cache-hhn1550-HHN',
+104 verbose headers   'x-cache': 'MISS',
+104 verbose headers   'x-cache-hits': '0',
+104 verbose headers   'x-timer': 'S1509296016.564554,VS0,VE92',
+104 verbose headers   vary: 'Accept-Encoding, Accept' }
+105 silly get cb [ 304,
+105 silly get   { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+105 silly get     via: '1.1 varnish',
+105 silly get     'cache-control': 'max-age=300',
+105 silly get     etag: 'W/"5645a2ba-1a59"',
+105 silly get     age: '0',
+105 silly get     connection: 'keep-alive',
+105 silly get     'x-served-by': 'cache-hhn1550-HHN',
+105 silly get     'x-cache': 'MISS',
+105 silly get     'x-cache-hits': '0',
+105 silly get     'x-timer': 'S1509296016.564554,VS0,VE92',
+105 silly get     vary: 'Accept-Encoding, Accept' } ]
+106 verbose etag https://registry.npmjs.org/argsparser from cache
+107 verbose get saving argsparser to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\argsparser\.cache.json
+108 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+109 verbose get https://registry.npmjs.org/sharedjs not expired, no request
+110 silly addNameRange number 2 { name: 'sharedjs', range: '>=0.0.1', hasData: true }
+111 silly addNameRange versions [ 'sharedjs', [ '0.0.1', '0.0.2' ] ]
+112 silly addNamed sharedjs@0.0.2
+113 verbose addNamed "0.0.2" is a plain semver version for sharedjs
+114 silly cache afterAdd sharedjs@0.0.2
+115 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\sharedjs\0.0.2\package\package.json not in flight; writing
+116 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+117 silly resolveWithNewModule argsparser@0.0.7 checking installable status
+118 silly cache add args [ 'argsparser@>= 0.0.3', null ]
+119 verbose cache add spec argsparser@>= 0.0.3
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'argsparser@>= 0.0.3',
+120 silly cache add   scope: null,
+120 silly cache add   escapedName: 'argsparser',
+120 silly cache add   name: 'argsparser',
+120 silly cache add   rawSpec: '>= 0.0.3',
+120 silly cache add   spec: '>=0.0.3',
+120 silly cache add   type: 'range' }
+121 silly addNamed argsparser@>=0.0.3
+122 verbose addNamed ">=0.0.3" is a valid semver range for argsparser
+123 silly addNameRange { name: 'argsparser', range: '>=0.0.3', hasData: false }
+124 silly mapToRegistry name argsparser
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'argsparser',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   escapedName: 'argsparser',
+127 silly mapToRegistry   name: 'argsparser',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/argsparser
+129 verbose addNameRange registry:https://registry.npmjs.org/argsparser not in flight; fetching
+130 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\sharedjs\0.0.2\package\package.json written
+131 verbose get https://registry.npmjs.org/argsparser not expired, no request
+132 silly addNameRange number 2 { name: 'argsparser', range: '>=0.0.3', hasData: true }
+133 silly addNameRange versions [ 'argsparser',
+133 silly addNameRange   [ '0.0.3', '0.0.4', '0.0.5', '0.0.6', '0.0.7' ] ]
+134 silly addNamed argsparser@0.0.7
+135 verbose addNamed "0.0.7" is a plain semver version for argsparser
+136 silly cache afterAdd argsparser@0.0.7
+137 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\argsparser\0.0.7\package\package.json not in flight; writing
+138 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+139 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\argsparser\0.0.7\package\package.json written
+140 silly fetchNamedPackageData uglify-js
+141 silly mapToRegistry name uglify-js
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'uglify-js',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   escapedName: 'uglify-js',
+144 silly mapToRegistry   name: 'uglify-js',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/uglify-js
+146 verbose request uri https://registry.npmjs.org/uglify-js
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 18:53:34
+149 verbose etag W/"59f5a44c-3aae4"
+150 verbose lastModified Sun, 29 Oct 2017 09:50:04 GMT
+151 http request GET https://registry.npmjs.org/uglify-js
+152 http 304 https://registry.npmjs.org/uglify-js
+153 verbose headers { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+153 verbose headers   via: '1.1 varnish',
+153 verbose headers   'cache-control': 'max-age=300',
+153 verbose headers   etag: 'W/"59f5a44c-3aae4"',
+153 verbose headers   age: '71',
+153 verbose headers   connection: 'keep-alive',
+153 verbose headers   'x-served-by': 'cache-hhn1528-HHN',
+153 verbose headers   'x-cache': 'HIT',
+153 verbose headers   'x-cache-hits': '2',
+153 verbose headers   'x-timer': 'S1509296016.760222,VS0,VE0',
+153 verbose headers   vary: 'Accept-Encoding, Accept' }
+154 silly get cb [ 304,
+154 silly get   { date: 'Sun, 29 Oct 2017 16:53:35 GMT',
+154 silly get     via: '1.1 varnish',
+154 silly get     'cache-control': 'max-age=300',
+154 silly get     etag: 'W/"59f5a44c-3aae4"',
+154 silly get     age: '71',
+154 silly get     connection: 'keep-alive',
+154 silly get     'x-served-by': 'cache-hhn1528-HHN',
+154 silly get     'x-cache': 'HIT',
+154 silly get     'x-cache-hits': '2',
+154 silly get     'x-timer': 'S1509296016.760222,VS0,VE0',
+154 silly get     vary: 'Accept-Encoding, Accept' } ]
+155 verbose etag https://registry.npmjs.org/uglify-js from cache
+156 verbose get saving uglify-js to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\uglify-js\.cache.json
+157 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+158 silly resolveWithNewModule uglify-js@3.1.6 checking installable status
+159 silly cache add args [ 'uglify-js@>= 0.0.1', null ]
+160 verbose cache add spec uglify-js@>= 0.0.1
+161 silly cache add parsed spec Result {
+161 silly cache add   raw: 'uglify-js@>= 0.0.1',
+161 silly cache add   scope: null,
+161 silly cache add   escapedName: 'uglify-js',
+161 silly cache add   name: 'uglify-js',
+161 silly cache add   rawSpec: '>= 0.0.1',
+161 silly cache add   spec: '>=0.0.1',
+161 silly cache add   type: 'range' }
+162 silly addNamed uglify-js@>=0.0.1
+163 verbose addNamed ">=0.0.1" is a valid semver range for uglify-js
+164 silly addNameRange { name: 'uglify-js', range: '>=0.0.1', hasData: false }
+165 silly mapToRegistry name uglify-js
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry data Result {
+168 silly mapToRegistry   raw: 'uglify-js',
+168 silly mapToRegistry   scope: null,
+168 silly mapToRegistry   escapedName: 'uglify-js',
+168 silly mapToRegistry   name: 'uglify-js',
+168 silly mapToRegistry   rawSpec: '',
+168 silly mapToRegistry   spec: 'latest',
+168 silly mapToRegistry   type: 'tag' }
+169 silly mapToRegistry uri https://registry.npmjs.org/uglify-js
+170 verbose addNameRange registry:https://registry.npmjs.org/uglify-js not in flight; fetching
+171 verbose get https://registry.npmjs.org/uglify-js not expired, no request
+172 silly addNameRange number 2 { name: 'uglify-js', range: '>=0.0.1', hasData: true }
+173 silly addNameRange versions [ 'uglify-js',
+173 silly addNameRange   [ '0.0.1',
+173 silly addNameRange     '0.0.2',
+173 silly addNameRange     '0.0.3',
+173 silly addNameRange     '0.0.4',
+173 silly addNameRange     '0.0.5',
+173 silly addNameRange     '1.0.1',
+173 silly addNameRange     '1.0.2',
+173 silly addNameRange     '1.0.3',
+173 silly addNameRange     '1.0.4',
+173 silly addNameRange     '1.0.5',
+173 silly addNameRange     '1.0.6',
+173 silly addNameRange     '1.0.7',
+173 silly addNameRange     '1.1.0',
+173 silly addNameRange     '1.1.1',
+173 silly addNameRange     '1.2.0',
+173 silly addNameRange     '1.2.1',
+173 silly addNameRange     '1.2.2',
+173 silly addNameRange     '1.2.3',
+173 silly addNameRange     '1.2.4',
+173 silly addNameRange     '1.2.5',
+173 silly addNameRange     '1.2.6',
+173 silly addNameRange     '1.3.0',
+173 silly addNameRange     '1.3.1',
+173 silly addNameRange     '1.3.2',
+173 silly addNameRange     '1.3.3',
+173 silly addNameRange     '1.3.4',
+173 silly addNameRange     '2.2.0',
+173 silly addNameRange     '2.2.1',
+173 silly addNameRange     '2.2.2',
+173 silly addNameRange     '2.2.3',
+173 silly addNameRange     '2.2.4',
+173 silly addNameRange     '2.2.5',
+173 silly addNameRange     '2.3.0',
+173 silly addNameRange     '2.3.1',
+173 silly addNameRange     '2.3.2',
+173 silly addNameRange     '2.3.3',
+173 silly addNameRange     '2.3.4',
+173 silly addNameRange     '2.3.5',
+173 silly addNameRange     '2.3.6',
+173 silly addNameRange     '1.3.5',
+173 silly addNameRange     '2.4.0',
+173 silly addNameRange     '2.4.1',
+173 silly addNameRange     '2.4.2',
+173 silly addNameRange     '2.4.3',
+173 silly addNameRange     '2.4.4',
+173 silly addNameRange     '2.4.5',
+173 silly addNameRange     '2.4.6',
+173 silly addNameRange     '2.4.7',
+173 silly addNameRange     '2.4.8',
+173 silly addNameRange     '2.4.9',
+173 silly addNameRange     '2.4.10',
+173 silly addNameRange     '2.4.11',
+173 silly addNameRange     '2.4.12',
+173 silly addNameRange     '2.4.13',
+173 silly addNameRange     '2.4.14',
+173 silly addNameRange     '2.4.15',
+173 silly addNameRange     '2.4.16',
+173 silly addNameRange     '2.4.17',
+173 silly addNameRange     '2.4.18',
+173 silly addNameRange     '2.4.19',
+173 silly addNameRange     '2.4.20',
+173 silly addNameRange     '2.4.21',
+173 silly addNameRange     '2.4.22',
+173 silly addNameRange     '2.4.23',
+173 silly addNameRange     '2.4.24',
+173 silly addNameRange     '2.5.0',
+173 silly addNameRange     '2.6.0',
+173 silly addNameRange     '2.6.1',
+173 silly addNameRange     '2.6.2',
+173 silly addNameRange     '2.6.3',
+173 silly addNameRange     '2.6.4',
+173 silly addNameRange     '2.7.0',
+173 silly addNameRange     '2.7.1',
+173 silly addNameRange     '2.7.2',
+173 silly addNameRange     '2.7.3',
+173 silly addNameRange     '2.7.4',
+173 silly addNameRange     '2.7.5',
+173 silly addNameRange     '2.8.0',
+173 silly addNameRange     '2.8.1',
+173 silly addNameRange     '2.8.2',
+173 silly addNameRange     '2.8.3',
+173 silly addNameRange     '2.8.4',
+173 silly addNameRange     '2.8.5',
+173 silly addNameRange     '2.8.6',
+173 silly addNameRange     '2.8.7',
+173 silly addNameRange     '2.8.8',
+173 silly addNameRange     '2.8.9',
+173 silly addNameRange     '2.8.10',
+173 silly addNameRange     '2.8.11',
+173 silly addNameRange     '2.8.12',
+173 silly addNameRange     '2.8.13',
+173 silly addNameRange     '2.8.14',
+173 silly addNameRange     '2.8.15',
+173 silly addNameRange     '2.8.16',
+173 silly addNameRange     '2.8.17',
+173 silly addNameRange     '2.8.18',
+173 silly addNameRange     '2.8.19',
+173 silly addNameRange     '2.8.20',
+173 silly addNameRange     '2.8.21',
+173 silly addNameRange     '2.8.22',
+173 silly addNameRange     ... 42 more items ] ]
+174 silly addNamed uglify-js@3.1.6
+175 verbose addNamed "3.1.6" is a plain semver version for uglify-js
+176 silly mapToRegistry name uglify-js
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry data Result {
+179 silly mapToRegistry   raw: 'uglify-js',
+179 silly mapToRegistry   scope: null,
+179 silly mapToRegistry   escapedName: 'uglify-js',
+179 silly mapToRegistry   name: 'uglify-js',
+179 silly mapToRegistry   rawSpec: '',
+179 silly mapToRegistry   spec: 'latest',
+179 silly mapToRegistry   type: 'tag' }
+180 silly mapToRegistry uri https://registry.npmjs.org/uglify-js
+181 verbose addRemoteTarball https://registry.npmjs.org/uglify-js/-/uglify-js-3.1.6.tgz not in flight; adding
+182 verbose addRemoteTarball [ 'https://registry.npmjs.org/uglify-js/-/uglify-js-3.1.6.tgz',
+182 verbose addRemoteTarball   '918832602036e95d2318e11f27ee8461a8592c5d' ]
+183 info retry fetch attempt 1 at 18:53:34
+184 info attempt registry request try #1 at 18:53:34
+185 http fetch GET https://registry.npmjs.org/uglify-js/-/uglify-js-3.1.6.tgz
+186 http fetch 200 https://registry.npmjs.org/uglify-js/-/uglify-js-3.1.6.tgz
+187 silly fetchAndShaCheck shasum 918832602036e95d2318e11f27ee8461a8592c5d
+188 verbose addTmpTarball C:\Users\DMYTRO~1\AppData\Local\Temp\npm-16456-f0eb3de2\registry.npmjs.org\uglify-js\-\uglify-js-3.1.6.tgz not in flight; adding
+189 verbose addTmpTarball already have metadata; skipping unpack for uglify-js@3.1.6
+190 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+191 silly cache afterAdd uglify-js@3.1.6
+192 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\uglify-js\3.1.6\package\package.json not in flight; writing
+193 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+194 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\uglify-js\3.1.6\package\package.json written
+195 silly fetchNamedPackageData commander
+196 silly mapToRegistry name commander
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry data Result {
+199 silly mapToRegistry   raw: 'commander',
+199 silly mapToRegistry   scope: null,
+199 silly mapToRegistry   escapedName: 'commander',
+199 silly mapToRegistry   name: 'commander',
+199 silly mapToRegistry   rawSpec: '',
+199 silly mapToRegistry   spec: 'latest',
+199 silly mapToRegistry   type: 'tag' }
+200 silly mapToRegistry uri https://registry.npmjs.org/commander
+201 silly fetchNamedPackageData source-map
+202 silly mapToRegistry name source-map
+203 silly mapToRegistry using default registry
+204 silly mapToRegistry registry https://registry.npmjs.org/
+205 silly mapToRegistry data Result {
+205 silly mapToRegistry   raw: 'source-map',
+205 silly mapToRegistry   scope: null,
+205 silly mapToRegistry   escapedName: 'source-map',
+205 silly mapToRegistry   name: 'source-map',
+205 silly mapToRegistry   rawSpec: '',
+205 silly mapToRegistry   spec: 'latest',
+205 silly mapToRegistry   type: 'tag' }
+206 silly mapToRegistry uri https://registry.npmjs.org/source-map
+207 verbose request uri https://registry.npmjs.org/commander
+208 verbose request no auth needed
+209 info attempt registry request try #1 at 18:53:34
+210 verbose etag W/"59f2cd01-1192f"
+211 verbose lastModified Fri, 27 Oct 2017 06:06:57 GMT
+212 http request GET https://registry.npmjs.org/commander
+213 verbose request uri https://registry.npmjs.org/source-map
+214 verbose request no auth needed
+215 info attempt registry request try #1 at 18:53:34
+216 verbose etag W/"59e4df41-28207"
+217 verbose lastModified Mon, 16 Oct 2017 16:33:05 GMT
+218 http request GET https://registry.npmjs.org/source-map
+219 http 304 https://registry.npmjs.org/commander
+220 verbose headers { date: 'Sun, 29 Oct 2017 16:53:36 GMT',
+220 verbose headers   via: '1.1 varnish',
+220 verbose headers   'cache-control': 'max-age=300',
+220 verbose headers   etag: 'W/"59f2cd01-1192f"',
+220 verbose headers   age: '30',
+220 verbose headers   connection: 'keep-alive',
+220 verbose headers   'x-served-by': 'cache-hhn1528-HHN',
+220 verbose headers   'x-cache': 'HIT',
+220 verbose headers   'x-cache-hits': '2',
+220 verbose headers   'x-timer': 'S1509296016.074866,VS0,VE0',
+220 verbose headers   vary: 'Accept-Encoding, Accept' }
+221 silly get cb [ 304,
+221 silly get   { date: 'Sun, 29 Oct 2017 16:53:36 GMT',
+221 silly get     via: '1.1 varnish',
+221 silly get     'cache-control': 'max-age=300',
+221 silly get     etag: 'W/"59f2cd01-1192f"',
+221 silly get     age: '30',
+221 silly get     connection: 'keep-alive',
+221 silly get     'x-served-by': 'cache-hhn1528-HHN',
+221 silly get     'x-cache': 'HIT',
+221 silly get     'x-cache-hits': '2',
+221 silly get     'x-timer': 'S1509296016.074866,VS0,VE0',
+221 silly get     vary: 'Accept-Encoding, Accept' } ]
+222 verbose etag https://registry.npmjs.org/commander from cache
+223 verbose get saving commander to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\commander\.cache.json
+224 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+225 http 304 https://registry.npmjs.org/source-map
+226 verbose headers { date: 'Sun, 29 Oct 2017 16:53:36 GMT',
+226 verbose headers   via: '1.1 varnish',
+226 verbose headers   'cache-control': 'max-age=300',
+226 verbose headers   etag: 'W/"59e4df41-28207"',
+226 verbose headers   age: '245',
+226 verbose headers   connection: 'keep-alive',
+226 verbose headers   'x-served-by': 'cache-hhn1550-HHN',
+226 verbose headers   'x-cache': 'HIT',
+226 verbose headers   'x-cache-hits': '3',
+226 verbose headers   'x-timer': 'S1509296016.081430,VS0,VE0',
+226 verbose headers   vary: 'Accept-Encoding, Accept' }
+227 silly get cb [ 304,
+227 silly get   { date: 'Sun, 29 Oct 2017 16:53:36 GMT',
+227 silly get     via: '1.1 varnish',
+227 silly get     'cache-control': 'max-age=300',
+227 silly get     etag: 'W/"59e4df41-28207"',
+227 silly get     age: '245',
+227 silly get     connection: 'keep-alive',
+227 silly get     'x-served-by': 'cache-hhn1550-HHN',
+227 silly get     'x-cache': 'HIT',
+227 silly get     'x-cache-hits': '3',
+227 silly get     'x-timer': 'S1509296016.081430,VS0,VE0',
+227 silly get     vary: 'Accept-Encoding, Accept' } ]
+228 verbose etag https://registry.npmjs.org/source-map from cache
+229 verbose get saving source-map to C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\registry.npmjs.org\source-map\.cache.json
+230 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+231 silly resolveWithNewModule commander@2.11.0 checking installable status
+232 silly cache add args [ 'commander@~2.11.0', null ]
+233 verbose cache add spec commander@~2.11.0
+234 silly cache add parsed spec Result {
+234 silly cache add   raw: 'commander@~2.11.0',
+234 silly cache add   scope: null,
+234 silly cache add   escapedName: 'commander',
+234 silly cache add   name: 'commander',
+234 silly cache add   rawSpec: '~2.11.0',
+234 silly cache add   spec: '>=2.11.0 <2.12.0',
+234 silly cache add   type: 'range' }
+235 silly addNamed commander@>=2.11.0 <2.12.0
+236 verbose addNamed ">=2.11.0 <2.12.0" is a valid semver range for commander
+237 silly addNameRange { name: 'commander', range: '>=2.11.0 <2.12.0', hasData: false }
+238 silly mapToRegistry name commander
+239 silly mapToRegistry using default registry
+240 silly mapToRegistry registry https://registry.npmjs.org/
+241 silly mapToRegistry data Result {
+241 silly mapToRegistry   raw: 'commander',
+241 silly mapToRegistry   scope: null,
+241 silly mapToRegistry   escapedName: 'commander',
+241 silly mapToRegistry   name: 'commander',
+241 silly mapToRegistry   rawSpec: '',
+241 silly mapToRegistry   spec: 'latest',
+241 silly mapToRegistry   type: 'tag' }
+242 silly mapToRegistry uri https://registry.npmjs.org/commander
+243 verbose addNameRange registry:https://registry.npmjs.org/commander not in flight; fetching
+244 silly resolveWithNewModule source-map@0.6.1 checking installable status
+245 silly cache add args [ 'source-map@~0.6.1', null ]
+246 verbose cache add spec source-map@~0.6.1
+247 silly cache add parsed spec Result {
+247 silly cache add   raw: 'source-map@~0.6.1',
+247 silly cache add   scope: null,
+247 silly cache add   escapedName: 'source-map',
+247 silly cache add   name: 'source-map',
+247 silly cache add   rawSpec: '~0.6.1',
+247 silly cache add   spec: '>=0.6.1 <0.7.0',
+247 silly cache add   type: 'range' }
+248 silly addNamed source-map@>=0.6.1 <0.7.0
+249 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for source-map
+250 silly addNameRange { name: 'source-map', range: '>=0.6.1 <0.7.0', hasData: false }
+251 silly mapToRegistry name source-map
+252 silly mapToRegistry using default registry
+253 silly mapToRegistry registry https://registry.npmjs.org/
+254 silly mapToRegistry data Result {
+254 silly mapToRegistry   raw: 'source-map',
+254 silly mapToRegistry   scope: null,
+254 silly mapToRegistry   escapedName: 'source-map',
+254 silly mapToRegistry   name: 'source-map',
+254 silly mapToRegistry   rawSpec: '',
+254 silly mapToRegistry   spec: 'latest',
+254 silly mapToRegistry   type: 'tag' }
+255 silly mapToRegistry uri https://registry.npmjs.org/source-map
+256 verbose addNameRange registry:https://registry.npmjs.org/source-map not in flight; fetching
+257 verbose get https://registry.npmjs.org/commander not expired, no request
+258 silly addNameRange number 2 { name: 'commander', range: '>=2.11.0 <2.12.0', hasData: true }
+259 silly addNameRange versions [ 'commander',
+259 silly addNameRange   [ '0.0.1',
+259 silly addNameRange     '0.0.3',
+259 silly addNameRange     '0.0.4',
+259 silly addNameRange     '0.0.5',
+259 silly addNameRange     '0.1.0',
+259 silly addNameRange     '0.2.0',
+259 silly addNameRange     '0.2.1',
+259 silly addNameRange     '0.3.0',
+259 silly addNameRange     '0.3.1',
+259 silly addNameRange     '0.3.2',
+259 silly addNameRange     '0.3.3',
+259 silly addNameRange     '0.4.0',
+259 silly addNameRange     '0.4.1',
+259 silly addNameRange     '0.4.2',
+259 silly addNameRange     '0.4.3',
+259 silly addNameRange     '0.5.0',
+259 silly addNameRange     '0.5.1',
+259 silly addNameRange     '0.6.0',
+259 silly addNameRange     '0.6.1',
+259 silly addNameRange     '0.5.2',
+259 silly addNameRange     '1.0.0',
+259 silly addNameRange     '1.0.1',
+259 silly addNameRange     '1.0.2',
+259 silly addNameRange     '1.0.3',
+259 silly addNameRange     '1.0.4',
+259 silly addNameRange     '1.0.5',
+259 silly addNameRange     '1.1.0',
+259 silly addNameRange     '1.1.1',
+259 silly addNameRange     '1.2.0',
+259 silly addNameRange     '1.3.0',
+259 silly addNameRange     '1.3.1',
+259 silly addNameRange     '1.3.2',
+259 silly addNameRange     '2.0.0',
+259 silly addNameRange     '2.1.0',
+259 silly addNameRange     '2.2.0',
+259 silly addNameRange     '2.3.0',
+259 silly addNameRange     '2.4.0',
+259 silly addNameRange     '2.5.0',
+259 silly addNameRange     '2.5.1',
+259 silly addNameRange     '2.6.0',
+259 silly addNameRange     '2.7.0',
+259 silly addNameRange     '2.7.1',
+259 silly addNameRange     '2.8.0',
+259 silly addNameRange     '2.8.1',
+259 silly addNameRange     '2.9.0',
+259 silly addNameRange     '2.10.0',
+259 silly addNameRange     '2.11.0' ] ]
+260 silly addNamed commander@2.11.0
+261 verbose addNamed "2.11.0" is a plain semver version for commander
+262 verbose get https://registry.npmjs.org/source-map not expired, no request
+263 silly addNameRange number 2 { name: 'source-map', range: '>=0.6.1 <0.7.0', hasData: true }
+264 silly addNameRange versions [ 'source-map',
+264 silly addNameRange   [ '0.0.0',
+264 silly addNameRange     '0.1.0',
+264 silly addNameRange     '0.1.1',
+264 silly addNameRange     '0.1.2',
+264 silly addNameRange     '0.1.3',
+264 silly addNameRange     '0.1.4',
+264 silly addNameRange     '0.1.5',
+264 silly addNameRange     '0.1.6',
+264 silly addNameRange     '0.1.7',
+264 silly addNameRange     '0.1.8',
+264 silly addNameRange     '0.1.9',
+264 silly addNameRange     '0.1.10',
+264 silly addNameRange     '0.1.11',
+264 silly addNameRange     '0.1.12',
+264 silly addNameRange     '0.1.13',
+264 silly addNameRange     '0.1.14',
+264 silly addNameRange     '0.1.15',
+264 silly addNameRange     '0.1.16',
+264 silly addNameRange     '0.1.17',
+264 silly addNameRange     '0.1.18',
+264 silly addNameRange     '0.1.19',
+264 silly addNameRange     '0.1.20',
+264 silly addNameRange     '0.1.21',
+264 silly addNameRange     '0.1.22',
+264 silly addNameRange     '0.1.23',
+264 silly addNameRange     '0.1.24',
+264 silly addNameRange     '0.1.25',
+264 silly addNameRange     '0.1.26',
+264 silly addNameRange     '0.1.27',
+264 silly addNameRange     '0.1.28',
+264 silly addNameRange     '0.1.29',
+264 silly addNameRange     '0.1.30',
+264 silly addNameRange     '0.1.31',
+264 silly addNameRange     '0.1.32',
+264 silly addNameRange     '0.1.33',
+264 silly addNameRange     '0.1.34',
+264 silly addNameRange     '0.1.35',
+264 silly addNameRange     '0.1.36',
+264 silly addNameRange     '0.1.37',
+264 silly addNameRange     '0.1.38',
+264 silly addNameRange     '0.1.39',
+264 silly addNameRange     '0.1.40',
+264 silly addNameRange     '0.1.41',
+264 silly addNameRange     '0.1.42',
+264 silly addNameRange     '0.1.43',
+264 silly addNameRange     '0.2.0',
+264 silly addNameRange     '0.3.0',
+264 silly addNameRange     '0.4.0',
+264 silly addNameRange     '0.4.1',
+264 silly addNameRange     '0.4.2',
+264 silly addNameRange     '0.4.3',
+264 silly addNameRange     '0.4.4',
+264 silly addNameRange     '0.5.0',
+264 silly addNameRange     '0.5.1',
+264 silly addNameRange     '0.5.2',
+264 silly addNameRange     '0.5.3',
+264 silly addNameRange     '0.5.4',
+264 silly addNameRange     '0.5.5',
+264 silly addNameRange     '0.5.6',
+264 silly addNameRange     '0.5.7',
+264 silly addNameRange     '0.6.0',
+264 silly addNameRange     '0.6.1' ] ]
+265 silly addNamed source-map@0.6.1
+266 verbose addNamed "0.6.1" is a plain semver version for source-map
+267 silly mapToRegistry name source-map
+268 silly mapToRegistry using default registry
+269 silly mapToRegistry registry https://registry.npmjs.org/
+270 silly mapToRegistry data Result {
+270 silly mapToRegistry   raw: 'source-map',
+270 silly mapToRegistry   scope: null,
+270 silly mapToRegistry   escapedName: 'source-map',
+270 silly mapToRegistry   name: 'source-map',
+270 silly mapToRegistry   rawSpec: '',
+270 silly mapToRegistry   spec: 'latest',
+270 silly mapToRegistry   type: 'tag' }
+271 silly mapToRegistry uri https://registry.npmjs.org/source-map
+272 verbose addRemoteTarball https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz not in flight; adding
+273 verbose addRemoteTarball [ 'https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz',
+273 verbose addRemoteTarball   '74722af32e9614e9c287a8d0bbde48b5e2f1a263' ]
+274 silly cache afterAdd commander@2.11.0
+275 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\commander\2.11.0\package\package.json not in flight; writing
+276 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+277 info retry fetch attempt 1 at 18:53:34
+278 info attempt registry request try #1 at 18:53:34
+279 http fetch GET https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz
+280 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\commander\2.11.0\package\package.json written
+281 http fetch 200 https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz
+282 silly fetchAndShaCheck shasum 74722af32e9614e9c287a8d0bbde48b5e2f1a263
+283 verbose addTmpTarball C:\Users\DMYTRO~1\AppData\Local\Temp\npm-16456-f0eb3de2\registry.npmjs.org\source-map\-\source-map-0.6.1.tgz not in flight; adding
+284 verbose addTmpTarball already have metadata; skipping unpack for source-map@0.6.1
+285 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+286 silly cache afterAdd source-map@0.6.1
+287 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\source-map\0.6.1\package\package.json not in flight; writing
+288 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+289 verbose afterAdd C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\source-map\0.6.1\package\package.json written
+290 silly loadAllDepsIntoIdealTree Finishing
+291 silly loadIdealTree Finishing
+292 silly currentTree npm
+293 silly idealTree npm
+293 silly idealTree `-- linter@0.0.7
+293 silly idealTree   +-- argsparser@0.0.7
+293 silly idealTree   +-- commander@2.11.0
+293 silly idealTree   +-- sharedjs@0.0.2
+293 silly idealTree   +-- source-map@0.6.1
+293 silly idealTree   `-- uglify-js@3.1.6
+294 silly generateActionsToTake Starting
+295 silly install generateActionsToTake
+296 silly generateActionsToTake Finishing
+297 silly diffTrees action count 6
+298 silly diffTrees add argsparser@0.0.7
+299 silly diffTrees add commander@2.11.0
+300 silly diffTrees add source-map@0.6.1
+301 silly diffTrees add uglify-js@3.1.6
+302 silly diffTrees add sharedjs@0.0.2
+303 silly diffTrees add linter@0.0.7
+304 silly decomposeActions action count 48
+305 silly decomposeActions fetch argsparser@0.0.7
+306 silly decomposeActions extract argsparser@0.0.7
+307 silly decomposeActions test argsparser@0.0.7
+308 silly decomposeActions preinstall argsparser@0.0.7
+309 silly decomposeActions build argsparser@0.0.7
+310 silly decomposeActions install argsparser@0.0.7
+311 silly decomposeActions postinstall argsparser@0.0.7
+312 silly decomposeActions finalize argsparser@0.0.7
+313 silly decomposeActions fetch commander@2.11.0
+314 silly decomposeActions extract commander@2.11.0
+315 silly decomposeActions test commander@2.11.0
+316 silly decomposeActions preinstall commander@2.11.0
+317 silly decomposeActions build commander@2.11.0
+318 silly decomposeActions install commander@2.11.0
+319 silly decomposeActions postinstall commander@2.11.0
+320 silly decomposeActions finalize commander@2.11.0
+321 silly decomposeActions fetch source-map@0.6.1
+322 silly decomposeActions extract source-map@0.6.1
+323 silly decomposeActions test source-map@0.6.1
+324 silly decomposeActions preinstall source-map@0.6.1
+325 silly decomposeActions build source-map@0.6.1
+326 silly decomposeActions install source-map@0.6.1
+327 silly decomposeActions postinstall source-map@0.6.1
+328 silly decomposeActions finalize source-map@0.6.1
+329 silly decomposeActions fetch uglify-js@3.1.6
+330 silly decomposeActions extract uglify-js@3.1.6
+331 silly decomposeActions test uglify-js@3.1.6
+332 silly decomposeActions preinstall uglify-js@3.1.6
+333 silly decomposeActions build uglify-js@3.1.6
+334 silly decomposeActions install uglify-js@3.1.6
+335 silly decomposeActions postinstall uglify-js@3.1.6
+336 silly decomposeActions finalize uglify-js@3.1.6
+337 silly decomposeActions fetch sharedjs@0.0.2
+338 silly decomposeActions extract sharedjs@0.0.2
+339 silly decomposeActions test sharedjs@0.0.2
+340 silly decomposeActions preinstall sharedjs@0.0.2
+341 silly decomposeActions build sharedjs@0.0.2
+342 silly decomposeActions install sharedjs@0.0.2
+343 silly decomposeActions postinstall sharedjs@0.0.2
+344 silly decomposeActions finalize sharedjs@0.0.2
+345 silly decomposeActions fetch linter@0.0.7
+346 silly decomposeActions extract linter@0.0.7
+347 silly decomposeActions test linter@0.0.7
+348 silly decomposeActions preinstall linter@0.0.7
+349 silly decomposeActions build linter@0.0.7
+350 silly decomposeActions install linter@0.0.7
+351 silly decomposeActions postinstall linter@0.0.7
+352 silly decomposeActions finalize linter@0.0.7
+353 silly runTopLevelLifecycles Starting
+354 silly executeActions Starting
+355 silly install executeActions
+356 silly doSerial global-install 0
+357 silly doParallel fetch 6
+358 verbose correctMkdir C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+359 verbose lock using C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\_locks\staging-11732df28cdce79f.lock for C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging
+360 silly doParallel extract 6
+361 silly extract argsparser@0.0.7
+362 silly extract commander@2.11.0
+363 silly extract source-map@0.6.1
+364 silly extract uglify-js@3.1.6
+365 silly extract sharedjs@0.0.2
+366 silly extract linter@0.0.7
+367 verbose unbuild node_modules\.staging\argsparser-b8fdac47
+368 verbose unbuild node_modules\.staging\commander-ee56fd75
+369 verbose unbuild node_modules\.staging\source-map-81de6372
+370 verbose unbuild node_modules\.staging\uglify-js-20ce61dc
+371 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75 is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+372 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75
+373 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47 is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+374 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47
+375 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372 is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+376 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372
+377 verbose unbuild node_modules\.staging\sharedjs-eb72ec62
+378 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\commander\2.11.0\package.tgz
+379 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75
+380 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75 is being purged
+381 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75
+382 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\argsparser\0.0.7\package.tgz
+383 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47
+384 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47 is being purged
+385 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47
+386 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+387 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc
+388 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\source-map\0.6.1\package.tgz
+389 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372
+390 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372 is being purged
+391 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372
+392 verbose unbuild node_modules\.staging\linter-d3cf7e5e
+393 silly gunzTarPerm modes [ '777', '666' ]
+394 silly gunzTarPerm modes [ '777', '666' ]
+395 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\uglify-js\3.1.6\package.tgz
+396 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc
+397 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc is being purged
+398 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc
+399 silly gunzTarPerm modes [ '777', '666' ]
+400 silly gunzTarPerm modes [ '777', '666' ]
+401 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62 is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+402 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62
+403 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e is being purged from base C:\Users\DMYTRO-XPS\AppData\Roaming\npm
+404 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e
+405 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\sharedjs\0.0.2\package.tgz
+406 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62
+407 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62 is being purged
+408 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62
+409 verbose tar unpack C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\linter\0.0.7\package.tgz
+410 verbose tar unpacking to C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e
+411 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e is being purged
+412 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e
+413 silly gunzTarPerm modes [ '777', '666' ]
+414 silly gunzTarPerm modes [ '777', '666' ]
+415 silly gunzTarPerm extractEntry package.json
+416 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+417 silly gunzTarPerm extractEntry package.json
+418 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+419 silly gunzTarPerm extractEntry package.json
+420 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+421 silly gunzTarPerm extractEntry package.json
+422 silly gunzTarPerm extractEntry
+423 silly gunzTarPerm modified mode [ '', 493, 511 ]
+424 silly gunzTarPerm extractEntry .npmignore
+425 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+426 silly gunzTarPerm extractEntry LICENSE
+427 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+428 silly gunzTarPerm extractEntry
+429 silly gunzTarPerm modified mode [ '', 493, 511 ]
+430 silly gunzTarPerm extractEntry LICENSE
+431 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+432 silly gunzTarPerm extractEntry index.js
+433 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+434 silly gunzTarPerm extractEntry README.md
+435 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+436 silly gunzTarPerm extractEntry LICENSE
+437 silly gunzTarPerm extractEntry README.md
+438 silly gunzTarPerm extractEntry LICENSE
+439 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+440 silly gunzTarPerm extractEntry .gitmodules
+441 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+442 silly gunzTarPerm extractEntry bin/
+443 silly gunzTarPerm modified mode [ 'bin/', 493, 511 ]
+444 silly gunzTarPerm extractEntry deps/
+445 silly gunzTarPerm modified mode [ 'deps/', 493, 511 ]
+446 silly gunzTarPerm extractEntry .gitignore
+447 silly gunzTarPerm modified mode [ '.gitignore', 420, 438 ]
+448 silly gunzTarPerm extractEntry .gitmodules
+449 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+450 silly gunzTarPerm extractEntry bin/
+451 silly gunzTarPerm modified mode [ 'bin/', 493, 511 ]
+452 silly gunzTarPerm extractEntry index.js
+453 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+454 silly gunzTarPerm extractEntry Makefile
+455 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+456 silly gunzTarPerm extractEntry Readme.md
+457 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
+458 silly gunzTarPerm extractEntry bin/uglifyjs
+459 silly gunzTarPerm extractEntry source-map.js
+460 silly gunzTarPerm modified mode [ 'source-map.js', 420, 438 ]
+461 silly gunzTarPerm extractEntry lib/array-set.js
+462 silly gunzTarPerm modified mode [ 'lib/array-set.js', 420, 438 ]
+463 silly gunzTarPerm extractEntry lib/base64-vlq.js
+464 silly gunzTarPerm modified mode [ 'lib/base64-vlq.js', 420, 438 ]
+465 silly gunzTarPerm extractEntry index.js
+466 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+467 silly gunzTarPerm extractEntry lib/
+468 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+469 silly gunzTarPerm extractEntry conf/
+470 silly gunzTarPerm modified mode [ 'conf/', 493, 511 ]
+471 silly gunzTarPerm extractEntry deps/
+472 silly gunzTarPerm modified mode [ 'deps/', 493, 511 ]
+473 silly gunzTarPerm extractEntry lib/base64.js
+474 silly gunzTarPerm modified mode [ 'lib/base64.js', 420, 438 ]
+475 silly gunzTarPerm extractEntry lib/argsparser.js
+476 silly gunzTarPerm modified mode [ 'lib/argsparser.js', 420, 438 ]
+477 silly gunzTarPerm extractEntry readme.md
+478 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+479 silly gunzTarPerm extractEntry Makefile
+480 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+481 silly gunzTarPerm extractEntry package.json
+482 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+483 silly gunzTarPerm extractEntry readme.md
+484 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+485 silly gunzTarPerm extractEntry History.md
+486 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+487 silly gunzTarPerm extractEntry index.js
+488 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+489 silly gunzTarPerm extractEntry lib/
+490 silly gunzTarPerm modified mode [ 'lib/', 493, 511 ]
+491 silly gunzTarPerm extractEntry lib/ast.js
+492 silly gunzTarPerm extractEntry lib/compress.js
+493 silly gunzTarPerm extractEntry lib/minify.js
+494 silly gunzTarPerm extractEntry lib/binary-search.js
+495 silly gunzTarPerm modified mode [ 'lib/binary-search.js', 420, 438 ]
+496 silly gunzTarPerm extractEntry lib/mapping-list.js
+497 silly gunzTarPerm modified mode [ 'lib/mapping-list.js', 420, 438 ]
+498 silly gunzTarPerm extractEntry lib/mozilla-ast.js
+499 silly gunzTarPerm extractEntry src/
+500 silly gunzTarPerm modified mode [ 'src/', 493, 511 ]
+501 silly gunzTarPerm extractEntry test/
+502 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+503 silly gunzTarPerm extractEntry test/bind.js
+504 silly gunzTarPerm modified mode [ 'test/bind.js', 420, 438 ]
+505 silly gunzTarPerm extractEntry Makefile
+506 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+507 silly gunzTarPerm extractEntry package.json
+508 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+509 silly gunzTarPerm extractEntry readme.md
+510 silly gunzTarPerm modified mode [ 'readme.md', 420, 438 ]
+511 silly gunzTarPerm extractEntry test/test.js
+512 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+513 silly gunzTarPerm extractEntry lib/output.js
+514 silly gunzTarPerm extractEntry test/each.js
+515 silly gunzTarPerm modified mode [ 'test/each.js', 420, 438 ]
+516 silly gunzTarPerm extractEntry test/extend.js
+517 silly gunzTarPerm modified mode [ 'test/extend.js', 420, 438 ]
+518 silly gunzTarPerm extractEntry lib/quick-sort.js
+519 silly gunzTarPerm modified mode [ 'lib/quick-sort.js', 420, 438 ]
+520 silly gunzTarPerm extractEntry lib/source-map-consumer.js
+521 silly gunzTarPerm modified mode [ 'lib/source-map-consumer.js', 420, 438 ]
+522 silly gunzTarPerm extractEntry lib/parse.js
+523 silly gunzTarPerm extractEntry test/
+524 silly gunzTarPerm modified mode [ 'test/', 493, 511 ]
+525 silly gunzTarPerm extractEntry test/fixtures/
+526 silly gunzTarPerm modified mode [ 'test/fixtures/', 493, 511 ]
+527 silly gunzTarPerm extractEntry test/test.js
+528 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+529 silly gunzTarPerm extractEntry test/fixtures/closure-compiler.js
+530 silly gunzTarPerm modified mode [ 'test/fixtures/closure-compiler.js', 420, 438 ]
+531 silly gunzTarPerm extractEntry test/fixtures/closure-compiler.json
+532 silly gunzTarPerm modified mode [ 'test/fixtures/closure-compiler.json', 420, 438 ]
+533 silly gunzTarPerm extractEntry lib/source-map-generator.js
+534 silly gunzTarPerm modified mode [ 'lib/source-map-generator.js', 420, 438 ]
+535 silly gunzTarPerm extractEntry lib/source-node.js
+536 silly gunzTarPerm modified mode [ 'lib/source-node.js', 420, 438 ]
+537 silly gunzTarPerm extractEntry test/index.html
+538 silly gunzTarPerm modified mode [ 'test/index.html', 420, 438 ]
+539 silly gunzTarPerm extractEntry test/inherits.js
+540 silly gunzTarPerm modified mode [ 'test/inherits.js', 420, 438 ]
+541 silly gunzTarPerm extractEntry lib/propmangle.js
+542 silly gunzTarPerm extractEntry lib/scope.js
+543 silly gunzTarPerm extractEntry lib/sourcemap.js
+544 silly gunzTarPerm extractEntry lib/transform.js
+545 silly gunzTarPerm extractEntry test/fixtures/closure-linter.js
+546 silly gunzTarPerm modified mode [ 'test/fixtures/closure-linter.js', 420, 438 ]
+547 silly gunzTarPerm extractEntry test/fixtures/closure-linter.json
+548 silly gunzTarPerm modified mode [ 'test/fixtures/closure-linter.json', 420, 438 ]
+549 silly gunzTarPerm extractEntry test/toArray.js
+550 silly gunzTarPerm modified mode [ 'test/toArray.js', 420, 438 ]
+551 silly gunzTarPerm extractEntry test/trim.js
+552 silly gunzTarPerm modified mode [ 'test/trim.js', 420, 438 ]
+553 silly gunzTarPerm extractEntry lib/util.js
+554 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+555 silly gunzTarPerm extractEntry CHANGELOG.md
+556 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+557 silly gunzTarPerm extractEntry test/fixtures/javascriptlint.js
+558 silly gunzTarPerm modified mode [ 'test/fixtures/javascriptlint.js', 420, 438 ]
+559 silly gunzTarPerm extractEntry test/fixtures/javascriptlint.json
+560 silly gunzTarPerm modified mode [ 'test/fixtures/javascriptlint.json', 420, 438 ]
+561 silly gunzTarPerm extractEntry test/fixtures/jslint.js
+562 silly gunzTarPerm modified mode [ 'test/fixtures/jslint.js', 493, 511 ]
+563 silly gunzTarPerm extractEntry test/type.js
+564 silly gunzTarPerm modified mode [ 'test/type.js', 420, 438 ]
+565 silly gunzTarPerm extractEntry test/validate.js
+566 silly gunzTarPerm modified mode [ 'test/validate.js', 420, 438 ]
+567 silly gunzTarPerm extractEntry lib/utils.js
+568 silly gunzTarPerm extractEntry tools/domprops.json
+569 silly gunzTarPerm extractEntry source-map.d.ts
+570 silly gunzTarPerm modified mode [ 'source-map.d.ts', 420, 438 ]
+571 silly gunzTarPerm extractEntry dist/source-map.debug.js
+572 silly gunzTarPerm modified mode [ 'dist/source-map.debug.js', 420, 438 ]
+573 silly gunzTarPerm extractEntry test/fixtures/jslint.json
+574 silly gunzTarPerm modified mode [ 'test/fixtures/jslint.json', 420, 438 ]
+575 silly gunzTarPerm extractEntry test/fixtures/subfolder/
+576 silly gunzTarPerm modified mode [ 'test/fixtures/subfolder/', 493, 511 ]
+577 silly gunzTarPerm extractEntry tools/exports.js
+578 silly gunzTarPerm extractEntry tools/node.js
+579 silly gunzTarPerm extractEntry test/validate.methods.js
+580 silly gunzTarPerm modified mode [ 'test/validate.methods.js', 420, 438 ]
+581 silly gunzTarPerm extractEntry src/bind.js
+582 silly gunzTarPerm modified mode [ 'src/bind.js', 420, 438 ]
+583 silly gunzTarPerm extractEntry tools/props.html
+584 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75\node_modules is being purged
+585 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75\node_modules
+586 silly gunzTarPerm extractEntry test/fixtures/subfolder/jslint.js
+587 silly gunzTarPerm modified mode [ 'test/fixtures/subfolder/jslint.js', 493, 511 ]
+588 silly gunzTarPerm extractEntry lib/linter/
+589 silly gunzTarPerm modified mode [ 'lib/linter/', 493, 511 ]
+590 silly gunzTarPerm extractEntry src/each.js
+591 silly gunzTarPerm modified mode [ 'src/each.js', 420, 438 ]
+592 silly gunzTarPerm extractEntry src/env.js
+593 silly gunzTarPerm modified mode [ 'src/env.js', 420, 438 ]
+594 silly gunzTarPerm extractEntry src/error.js
+595 silly gunzTarPerm modified mode [ 'src/error.js', 420, 438 ]
+596 silly gunzTarPerm extractEntry lib/linter.js
+597 silly gunzTarPerm modified mode [ 'lib/linter.js', 420, 438 ]
+598 silly gunzTarPerm extractEntry lib/linter/closure-compiler.js
+599 silly gunzTarPerm modified mode [ 'lib/linter/closure-compiler.js', 420, 438 ]
+600 silly gunzTarPerm extractEntry src/extend.js
+601 silly gunzTarPerm modified mode [ 'src/extend.js', 420, 438 ]
+602 silly gunzTarPerm extractEntry src/filter.js
+603 silly gunzTarPerm modified mode [ 'src/filter.js', 420, 438 ]
+604 silly gunzTarPerm extractEntry src/indexOf.js
+605 silly gunzTarPerm modified mode [ 'src/indexOf.js', 420, 438 ]
+606 silly gunzTarPerm extractEntry dist/source-map.js
+607 silly gunzTarPerm modified mode [ 'dist/source-map.js', 420, 438 ]
+608 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47\node_modules is being purged
+609 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47\node_modules
+610 silly gunzTarPerm extractEntry lib/linter/closure-linter.js
+611 silly gunzTarPerm modified mode [ 'lib/linter/closure-linter.js', 420, 438 ]
+612 silly gunzTarPerm extractEntry lib/linter/javascriptlint.js
+613 silly gunzTarPerm modified mode [ 'lib/linter/javascriptlint.js', 420, 438 ]
+614 silly gunzTarPerm extractEntry lib/linter/jslint.js
+615 silly gunzTarPerm modified mode [ 'lib/linter/jslint.js', 420, 438 ]
+616 silly gunzTarPerm extractEntry src/inherits.js
+617 silly gunzTarPerm modified mode [ 'src/inherits.js', 420, 438 ]
+618 silly gunzTarPerm extractEntry src/intro.js
+619 silly gunzTarPerm modified mode [ 'src/intro.js', 420, 438 ]
+620 silly gunzTarPerm extractEntry dist/source-map.min.js
+621 silly gunzTarPerm modified mode [ 'dist/source-map.min.js', 420, 438 ]
+622 silly gunzTarPerm extractEntry deps/closure-compiler/
+623 silly gunzTarPerm modified mode [ 'deps/closure-compiler/', 493, 511 ]
+624 silly gunzTarPerm extractEntry deps/closure-linter/
+625 silly gunzTarPerm modified mode [ 'deps/closure-linter/', 493, 511 ]
+626 silly gunzTarPerm extractEntry deps/javascriptlint/
+627 silly gunzTarPerm modified mode [ 'deps/javascriptlint/', 493, 511 ]
+628 silly gunzTarPerm extractEntry src/lastIndexOf.js
+629 silly gunzTarPerm modified mode [ 'src/lastIndexOf.js', 420, 438 ]
+630 silly gunzTarPerm extractEntry src/map.js
+631 silly gunzTarPerm modified mode [ 'src/map.js', 420, 438 ]
+632 silly gunzTarPerm extractEntry dist/source-map.min.js.map
+633 silly gunzTarPerm modified mode [ 'dist/source-map.min.js.map', 420, 438 ]
+634 silly gunzTarPerm extractEntry deps/JSLint/
+635 silly gunzTarPerm modified mode [ 'deps/JSLint/', 493, 511 ]
+636 silly gunzTarPerm extractEntry deps/JSLint/fullinit_ui.js
+637 silly gunzTarPerm modified mode [ 'deps/JSLint/fullinit_ui.js', 493, 511 ]
+638 silly gunzTarPerm extractEntry src/noop.js
+639 silly gunzTarPerm modified mode [ 'src/noop.js', 420, 438 ]
+640 silly gunzTarPerm extractEntry src/now.js
+641 silly gunzTarPerm modified mode [ 'src/now.js', 420, 438 ]
+642 silly gunzTarPerm extractEntry deps/JSLint/fulljslint.html
+643 silly gunzTarPerm modified mode [ 'deps/JSLint/fulljslint.html', 493, 511 ]
+644 silly gunzTarPerm extractEntry deps/JSLint/fulljslint.js
+645 silly gunzTarPerm modified mode [ 'deps/JSLint/fulljslint.js', 493, 511 ]
+646 silly gunzTarPerm extractEntry src/outro.js
+647 silly gunzTarPerm modified mode [ 'src/outro.js', 420, 438 ]
+648 silly gunzTarPerm extractEntry src/querystring.js
+649 silly gunzTarPerm modified mode [ 'src/querystring.js', 420, 438 ]
+650 silly gunzTarPerm extractEntry deps/JSLint/intercept.js
+651 silly gunzTarPerm modified mode [ 'deps/JSLint/intercept.js', 493, 511 ]
+652 silly gunzTarPerm extractEntry deps/JSLint/lint.html
+653 silly gunzTarPerm modified mode [ 'deps/JSLint/lint.html', 493, 511 ]
+654 silly gunzTarPerm extractEntry src/toArray.js
+655 silly gunzTarPerm modified mode [ 'src/toArray.js', 420, 438 ]
+656 silly gunzTarPerm extractEntry src/trim.js
+657 silly gunzTarPerm modified mode [ 'src/trim.js', 420, 438 ]
+658 silly gunzTarPerm extractEntry deps/JSLint/README
+659 silly gunzTarPerm modified mode [ 'deps/JSLint/README', 493, 511 ]
+660 silly gunzTarPerm extractEntry deps/javascriptlint/jsl
+661 silly gunzTarPerm modified mode [ 'deps/javascriptlint/jsl', 493, 511 ]
+662 silly gunzTarPerm extractEntry src/type.js
+663 silly gunzTarPerm modified mode [ 'src/type.js', 420, 438 ]
+664 silly gunzTarPerm extractEntry src/validate.js
+665 silly gunzTarPerm modified mode [ 'src/validate.js', 420, 438 ]
+666 silly gunzTarPerm extractEntry src/validate.methods.js
+667 silly gunzTarPerm modified mode [ 'src/validate.methods.js', 420, 438 ]
+668 silly gunzTarPerm extractEntry lib/sharedjs.js
+669 silly gunzTarPerm modified mode [ 'lib/sharedjs.js', 420, 438 ]
+670 silly gunzTarPerm extractEntry lib/sharedjs.min.js
+671 silly gunzTarPerm modified mode [ 'lib/sharedjs.min.js', 420, 438 ]
+672 silly gunzTarPerm extractEntry deps/qunit/
+673 silly gunzTarPerm modified mode [ 'deps/qunit/', 493, 511 ]
+674 silly gunzTarPerm extractEntry deps/qunit/.gitignore
+675 silly gunzTarPerm modified mode [ 'deps/qunit/.gitignore', 420, 438 ]
+676 silly gunzTarPerm extractEntry deps/qunit/package.json
+677 silly gunzTarPerm modified mode [ 'deps/qunit/package.json', 420, 438 ]
+678 silly gunzTarPerm extractEntry deps/javascriptlint/jsl-test.js
+679 silly gunzTarPerm modified mode [ 'deps/javascriptlint/jsl-test.js', 493, 511 ]
+680 silly gunzTarPerm extractEntry deps/qunit/qunit/
+681 silly gunzTarPerm modified mode [ 'deps/qunit/qunit/', 493, 511 ]
+682 silly gunzTarPerm extractEntry deps/qunit/README.md
+683 silly gunzTarPerm modified mode [ 'deps/qunit/README.md', 420, 438 ]
+684 silly gunzTarPerm extractEntry deps/javascriptlint/jsl.default.conf
+685 silly gunzTarPerm modified mode [ 'deps/javascriptlint/jsl.default.conf', 493, 511 ]
+686 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/
+687 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/', 493, 511 ]
+688 silly gunzTarPerm extractEntry deps/qunit/test/
+689 silly gunzTarPerm modified mode [ 'deps/qunit/test/', 493, 511 ]
+690 silly gunzTarPerm extractEntry deps/qunit/test/headless.html
+691 silly gunzTarPerm modified mode [ 'deps/qunit/test/headless.html', 420, 438 ]
+692 silly gunzTarPerm extractEntry deps/closure-linter/PKG-INFO
+693 silly gunzTarPerm modified mode [ 'deps/closure-linter/PKG-INFO', 420, 438 ]
+694 silly gunzTarPerm extractEntry deps/closure-linter/README
+695 silly gunzTarPerm modified mode [ 'deps/closure-linter/README', 420, 438 ]
+696 silly gunzTarPerm extractEntry deps/closure-linter/setup.py
+697 silly gunzTarPerm modified mode [ 'deps/closure-linter/setup.py', 492, 510 ]
+698 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/__init__.py
+699 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/__init__.py', 492, 510 ]
+700 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/checker.py
+701 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/checker.py', 492, 510 ]
+702 silly gunzTarPerm extractEntry deps/qunit/test/index.html
+703 silly gunzTarPerm modified mode [ 'deps/qunit/test/index.html', 420, 438 ]
+704 silly gunzTarPerm extractEntry deps/qunit/test/same.js
+705 silly gunzTarPerm modified mode [ 'deps/qunit/test/same.js', 420, 438 ]
+706 silly gunzTarPerm extractEntry deps/qunit/test/test.js
+707 silly gunzTarPerm modified mode [ 'deps/qunit/test/test.js', 420, 438 ]
+708 silly gunzTarPerm extractEntry deps/qunit/qunit/qunit.css
+709 silly gunzTarPerm modified mode [ 'deps/qunit/qunit/qunit.css', 420, 438 ]
+710 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/checkerbase.py
+711 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/checkerbase.py', 492, 510 ]
+712 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/
+713 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/', 493, 511 ]
+714 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/ecmalintrules.py
+715 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/ecmalintrules.py',
+715 silly gunzTarPerm   492,
+715 silly gunzTarPerm   510 ]
+716 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/ecmametadatapass.py
+717 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/ecmametadatapass.py',
+717 silly gunzTarPerm   492,
+717 silly gunzTarPerm   510 ]
+718 silly gunzTarPerm extractEntry deps/qunit/qunit/qunit.js
+719 silly gunzTarPerm modified mode [ 'deps/qunit/qunit/qunit.js', 420, 438 ]
+720 silly gunzTarPerm extractEntry bin/build.js
+721 silly gunzTarPerm modified mode [ 'bin/build.js', 493, 511 ]
+722 silly gunzTarPerm extractEntry bin/deps.json
+723 silly gunzTarPerm modified mode [ 'bin/deps.json', 420, 438 ]
+724 silly gunzTarPerm extractEntry bin/test.js
+725 silly gunzTarPerm modified mode [ 'bin/test.js', 493, 511 ]
+726 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/error_fixer.py
+727 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/error_fixer.py', 492, 510 ]
+728 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/errorrules.py
+729 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/errorrules.py', 492, 510 ]
+730 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/errors.py
+731 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/errors.py', 492, 510 ]
+732 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/fixjsstyle.py
+733 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/fixjsstyle.py', 492, 510 ]
+734 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/fixjsstyle_test.py
+735 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/fixjsstyle_test.py',
+735 silly gunzTarPerm   492,
+735 silly gunzTarPerm   510 ]
+736 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/full_test.py
+737 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/full_test.py', 492, 510 ]
+738 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/gjslint.py
+739 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/gjslint.py', 492, 510 ]
+740 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/indentation.py
+741 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/indentation.py', 492, 510 ]
+742 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/javascriptlintrules.py
+743 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/javascriptlintrules.py',
+743 silly gunzTarPerm   492,
+743 silly gunzTarPerm   510 ]
+744 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/javascriptstatetracker.py
+745 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/javascriptstatetracker.py',
+745 silly gunzTarPerm   492,
+745 silly gunzTarPerm   510 ]
+746 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/javascriptstatetracker_test.py
+747 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/javascriptstatetracker_test.py',
+747 silly gunzTarPerm   492,
+747 silly gunzTarPerm   510 ]
+748 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/javascripttokenizer.py
+749 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/javascripttokenizer.py',
+749 silly gunzTarPerm   492,
+749 silly gunzTarPerm   510 ]
+750 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/javascripttokens.py
+751 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/javascripttokens.py',
+751 silly gunzTarPerm   492,
+751 silly gunzTarPerm   510 ]
+752 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/statetracker.py
+753 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/statetracker.py',
+753 silly gunzTarPerm   492,
+753 silly gunzTarPerm   510 ]
+754 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc\node_modules is being purged
+755 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc\node_modules
+756 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/tokenutil.py
+757 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/tokenutil.py', 492, 510 ]
+758 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/__init__.py
+759 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/__init__.py',
+759 silly gunzTarPerm   492,
+759 silly gunzTarPerm   510 ]
+760 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/error.py
+761 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/error.py',
+761 silly gunzTarPerm   492,
+761 silly gunzTarPerm   510 ]
+762 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/erroraccumulator.py
+763 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/erroraccumulator.py',
+763 silly gunzTarPerm   492,
+763 silly gunzTarPerm   510 ]
+764 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/errorhandler.py
+765 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/errorhandler.py',
+765 silly gunzTarPerm   492,
+765 silly gunzTarPerm   510 ]
+766 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/errorprinter.py
+767 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/errorprinter.py',
+767 silly gunzTarPerm   492,
+767 silly gunzTarPerm   510 ]
+768 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/filetestcase.py
+769 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/filetestcase.py',
+769 silly gunzTarPerm   492,
+769 silly gunzTarPerm   510 ]
+770 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372\node_modules is being purged
+771 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372\node_modules
+772 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/htmlutil.py
+773 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/htmlutil.py',
+773 silly gunzTarPerm   492,
+773 silly gunzTarPerm   510 ]
+774 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/lintrunner.py
+775 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/lintrunner.py',
+775 silly gunzTarPerm   492,
+775 silly gunzTarPerm   510 ]
+776 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/matcher.py
+777 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/matcher.py',
+777 silly gunzTarPerm   492,
+777 silly gunzTarPerm   510 ]
+778 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/position.py
+779 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/position.py',
+779 silly gunzTarPerm   492,
+779 silly gunzTarPerm   510 ]
+780 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/simplefileflags.py
+781 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/simplefileflags.py',
+781 silly gunzTarPerm   492,
+781 silly gunzTarPerm   510 ]
+782 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/tokenizer.py
+783 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/tokenizer.py',
+783 silly gunzTarPerm   492,
+783 silly gunzTarPerm   510 ]
+784 silly gunzTarPerm extractEntry deps/closure-linter/closure_linter/common/tokens.py
+785 silly gunzTarPerm modified mode [ 'deps/closure-linter/closure_linter/common/tokens.py',
+785 silly gunzTarPerm   492,
+785 silly gunzTarPerm   510 ]
+786 silly gunzTarPerm extractEntry deps/closure-compiler/compiler.jar
+787 silly gunzTarPerm modified mode [ 'deps/closure-compiler/compiler.jar', 420, 438 ]
+788 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62\node_modules is being purged
+789 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62\node_modules
+790 silly gunzTarPerm extractEntry deps/closure-compiler/COPYING
+791 silly gunzTarPerm modified mode [ 'deps/closure-compiler/COPYING', 420, 438 ]
+792 silly gunzTarPerm extractEntry deps/closure-compiler/README
+793 silly gunzTarPerm modified mode [ 'deps/closure-compiler/README', 420, 438 ]
+794 silly gunzTarPerm extractEntry conf/client.json
+795 silly gunzTarPerm modified mode [ 'conf/client.json', 420, 438 ]
+796 silly gunzTarPerm extractEntry conf/server.json
+797 silly gunzTarPerm modified mode [ 'conf/server.json', 420, 438 ]
+798 silly gunzTarPerm extractEntry bin/cli.js
+799 silly gunzTarPerm modified mode [ 'bin/cli.js', 493, 511 ]
+800 silly gentlyRm C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e\node_modules is being purged
+801 verbose gentlyRm don't care about contents; nuking C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e\node_modules
+802 silly doParallel preinstall 6
+803 silly preinstall argsparser@0.0.7 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47
+804 info lifecycle argsparser@0.0.7~preinstall: argsparser@0.0.7
+805 silly preinstall commander@2.11.0 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75
+806 info lifecycle commander@2.11.0~preinstall: commander@2.11.0
+807 silly preinstall source-map@0.6.1 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372
+808 info lifecycle source-map@0.6.1~preinstall: source-map@0.6.1
+809 silly preinstall uglify-js@3.1.6 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc
+810 info lifecycle uglify-js@3.1.6~preinstall: uglify-js@3.1.6
+811 silly preinstall sharedjs@0.0.2 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62
+812 info lifecycle sharedjs@0.0.2~preinstall: sharedjs@0.0.2
+813 silly preinstall linter@0.0.7 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e
+814 info lifecycle linter@0.0.7~preinstall: linter@0.0.7
+815 silly lifecycle argsparser@0.0.7~preinstall: no script for preinstall, continuing
+816 silly lifecycle commander@2.11.0~preinstall: no script for preinstall, continuing
+817 silly lifecycle source-map@0.6.1~preinstall: no script for preinstall, continuing
+818 silly lifecycle uglify-js@3.1.6~preinstall: no script for preinstall, continuing
+819 silly lifecycle sharedjs@0.0.2~preinstall: no script for preinstall, continuing
+820 silly lifecycle linter@0.0.7~preinstall: no script for preinstall, continuing
+821 silly doReverseSerial remove 0
+822 silly doSerial move 0
+823 silly doSerial finalize 6
+824 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\argsparser
+825 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\commander
+826 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\source-map
+827 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\uglify-js
+828 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\sharedjs
+829 silly finalize C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter
+830 silly doSerial build 6
+831 silly build argsparser@0.0.7
+832 info linkStuff argsparser@0.0.7
+833 silly linkStuff argsparser@0.0.7 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules as its parent node_modules
+834 silly linkStuff argsparser@0.0.7 is part of a global install
+835 silly linkStuff argsparser@0.0.7 is installed into a global node_modules
+836 verbose linkBins argsparser@0.0.7
+837 verbose linkMans argsparser@0.0.7
+838 silly build commander@2.11.0
+839 info linkStuff commander@2.11.0
+840 silly linkStuff commander@2.11.0 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules as its parent node_modules
+841 silly linkStuff commander@2.11.0 is part of a global install
+842 silly linkStuff commander@2.11.0 is installed into a global node_modules
+843 verbose linkBins commander@2.11.0
+844 verbose linkMans commander@2.11.0
+845 silly build source-map@0.6.1
+846 info linkStuff source-map@0.6.1
+847 silly linkStuff source-map@0.6.1 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules as its parent node_modules
+848 silly linkStuff source-map@0.6.1 is part of a global install
+849 silly linkStuff source-map@0.6.1 is installed into a global node_modules
+850 verbose linkBins source-map@0.6.1
+851 verbose linkMans source-map@0.6.1
+852 silly build uglify-js@3.1.6
+853 info linkStuff uglify-js@3.1.6
+854 silly linkStuff uglify-js@3.1.6 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules as its parent node_modules
+855 silly linkStuff uglify-js@3.1.6 is part of a global install
+856 silly linkStuff uglify-js@3.1.6 is installed into a global node_modules
+857 verbose linkBins uglify-js@3.1.6
+858 verbose link bins [ { uglifyjs: 'bin/uglifyjs' },
+858 verbose link bins   'C:\\Users\\DMYTRO-XPS\\AppData\\Roaming\\npm\\node_modules\\linter\\node_modules\\.bin',
+858 verbose link bins   false ]
+859 verbose linkMans uglify-js@3.1.6
+860 silly build sharedjs@0.0.2
+861 info linkStuff sharedjs@0.0.2
+862 silly linkStuff sharedjs@0.0.2 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules as its parent node_modules
+863 silly linkStuff sharedjs@0.0.2 is part of a global install
+864 silly linkStuff sharedjs@0.0.2 is installed into a global node_modules
+865 verbose linkBins sharedjs@0.0.2
+866 verbose link bins [ {},
+866 verbose link bins   'C:\\Users\\DMYTRO-XPS\\AppData\\Roaming\\npm\\node_modules\\linter\\node_modules\\.bin',
+866 verbose link bins   false ]
+867 verbose linkMans sharedjs@0.0.2
+868 silly build linter@0.0.7
+869 info linkStuff linter@0.0.7
+870 silly linkStuff linter@0.0.7 has C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules as its parent node_modules
+871 silly linkStuff linter@0.0.7 is part of a global install
+872 silly linkStuff linter@0.0.7 is installed into a global node_modules
+873 silly linkStuff linter@0.0.7 is installed into the top-level global node_modules
+874 verbose linkBins linter@0.0.7
+875 verbose link bins [ { linter: './bin/cli.js' },
+875 verbose link bins   'C:\\Users\\DMYTRO-XPS\\AppData\\Roaming\\npm',
+875 verbose link bins   true ]
+876 verbose linkMans linter@0.0.7
+877 silly doSerial global-link 0
+878 silly doParallel update-linked 0
+879 silly doSerial install 6
+880 silly install argsparser@0.0.7 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\argsparser-b8fdac47
+881 info lifecycle argsparser@0.0.7~install: argsparser@0.0.7
+882 silly lifecycle argsparser@0.0.7~install: no script for install, continuing
+883 silly install commander@2.11.0 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\commander-ee56fd75
+884 info lifecycle commander@2.11.0~install: commander@2.11.0
+885 silly lifecycle commander@2.11.0~install: no script for install, continuing
+886 silly install source-map@0.6.1 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\source-map-81de6372
+887 info lifecycle source-map@0.6.1~install: source-map@0.6.1
+888 silly lifecycle source-map@0.6.1~install: no script for install, continuing
+889 silly install uglify-js@3.1.6 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\uglify-js-20ce61dc
+890 info lifecycle uglify-js@3.1.6~install: uglify-js@3.1.6
+891 silly lifecycle uglify-js@3.1.6~install: no script for install, continuing
+892 silly install sharedjs@0.0.2 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\sharedjs-eb72ec62
+893 info lifecycle sharedjs@0.0.2~install: sharedjs@0.0.2
+894 silly lifecycle sharedjs@0.0.2~install: no script for install, continuing
+895 silly install linter@0.0.7 C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging\linter-d3cf7e5e
+896 info lifecycle linter@0.0.7~install: linter@0.0.7
+897 verbose lifecycle linter@0.0.7~install: unsafe-perm in lifecycle true
+898 verbose lifecycle linter@0.0.7~install: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter\node_modules\.bin;C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.bin;C:\Users\DMYTRO-XPS\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\DMYTRO-XPS\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\WIDCOMM\Bluetooth Software;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\DMYTRO-XPS\AppData\Local\Microsoft\WindowsApps;C:\Users\DMYTRO-XPS\AppData\Local\atom\bin;C:\Users\DMYTRO-XPS\AppData\Local\Microsoft\WindowsApps;C:\Users\DMYTRO-XPS\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+899 verbose lifecycle linter@0.0.7~install: CWD: C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\linter
+900 silly lifecycle linter@0.0.7~install: Args: [ '/d /s /c', 'make install' ]
+901 silly lifecycle linter@0.0.7~install: Returned: code: 1  signal: null
+902 info lifecycle linter@0.0.7~install: Failed to exec install script
+903 verbose unlock done using C:\Users\DMYTRO-XPS\AppData\Roaming\npm-cache\_locks\staging-11732df28cdce79f.lock for C:\Users\DMYTRO-XPS\AppData\Roaming\npm\node_modules\.staging
+904 silly rollbackFailedOptional Starting
+905 silly rollbackFailedOptional Finishing
+906 silly runTopLevelLifecycles Finishing
+907 silly install printInstalled
+908 verbose stack Error: linter@0.0.7 install: `make install`
+908 verbose stack Exit status 1
+908 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+908 verbose stack     at emitTwo (events.js:106:13)
+908 verbose stack     at EventEmitter.emit (events.js:191:7)
+908 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+908 verbose stack     at emitTwo (events.js:106:13)
+908 verbose stack     at ChildProcess.emit (events.js:191:7)
+908 verbose stack     at maybeClose (internal/child_process.js:920:16)
+908 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+909 verbose pkgid linter@0.0.7
+910 verbose cwd C:\GitLocal\GoITLib
+911 error Windows_NT 10.0.16299
+912 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "linter"
+913 error node v6.11.5
+914 error npm  v3.10.10
+915 error code ELIFECYCLE
+916 error linter@0.0.7 install: `make install`
+916 error Exit status 1
+917 error Failed at the linter@0.0.7 install script 'make install'.
+917 error Make sure you have the latest version of node.js and npm installed.
+917 error If you do, this is most likely a problem with the linter package,
+917 error not with npm itself.
+917 error Tell the author that this fails on your system:
+917 error     make install
+917 error You can get information on how to open an issue for this project with:
+917 error     npm bugs linter
+917 error Or if that isn't available, you can get their info via:
+917 error     npm owner ls linter
+917 error There is likely additional logging output above.
+918 verbose exit [ 1, true ]

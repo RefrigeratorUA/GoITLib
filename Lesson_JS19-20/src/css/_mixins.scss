@@ -1,18 +1,19 @@
 @mixin border-radius($radius) {
-    border-radius: $radius;
+  border-radius: $radius;
 }
+
 @mixin placeholder($color) {
-    &::-webkit-input-placeholder {color:$color}
-    &::-moz-placeholder          {color:$color}
-    &:-moz-placeholder           {color:$color}
-    &:-ms-input-placeholder      {color:$color}
+  &::-webkit-input-placeholder {color: $color;}
+  &:-moz-placeholder-shown {color: $color;}
+  &:-ms-input-placeholder {color: $color;}
 }
+
 @mixin clearfix {
-    &:after {
-        content: '';
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
 }

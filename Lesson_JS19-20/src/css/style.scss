@@ -1,89 +1,99 @@
 @import 'variables';
 @import 'mixins';
 
-html, body {
-    width: 100%;
+html,
+body {
+  width: 100%;
 }
 
 .header {
+  margin: 0 auto;
+  width: $main-width;
+
+  &__top {
+    @include clearfix;
+    padding: 36px 5px;
+
+    &__logo-position {
+      float: left;
+    }
+
+    &__social-list-position {
+      float: right;
+      margin-top: 12px;
+    }
+  }
+
+  &__nav {
+    @include clearfix;
+    background: $nav-background;
+
+    &__menu-position {
+      float: left;
+    }
+
+    &__search-form-position {
+      float: right;
+      margin: 8px 8px 0 0;
+    }
+  }
+
+  &__slider {
+    background: $slider-background;
+    height: $slider-height;
+    margin-top: 20px;
+    overflow: hidden;
     width: $main-width;
-    margin: 0 auto;
-    &__top {
-        padding: 36px 5px;
-        @include clearfix;
-        &__logo-position {
-            float: left;
-        }
-        &__social-list-position {
-            float: right;
-            margin-top: 12px;
-        }
-    }
-    &__nav {
-        background: $nav-background;
-        @include clearfix;
-        &__menu-position {
-            float: left;
-        }
-        &__search-form-position {
-            float: right;
-            margin: 8px 8px 0 0;
-        }
-    }
-    &__slider {
-        margin-top: 20px;
-        width: $main-width;
-        height: $slider-height;
-        background: #dedede;
-        overflow: hidden;
-    }
+  }
 }
 //Slider
 .slider {
-    display: block;
-    %bg-img {
-        background-position: 100% 50%, -1px -1px, 50% 50%;
-        background-size: auto, auto, cover;
-        background-blend-mode: normal, overlay, normal;
-        background-repeat: no-repeat;
-        animation: position 3s linear;
-        @keyframes position {
-            0% { background-position: (-$main-width) 50%, -1px (-$slider-height), 50% 50%;
-            }
-            100% { background-position: 100% 50%, -1px -1px, 50% 50%;
-            }
-        }
+  display: block;
+
+  %bg-img {
+    animation: position 3s linear;
+    background-blend-mode: normal, overlay, normal;
+    background-position: 100% 50%, -1px -1px, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+    @keyframes position {
+      0% { background-position: (-$main-width) 50%, -1px (-$slider-height), 50% 50%;
+      }
+      100% { background-position: 100% 50%, -1px -1px, 50% 50%;
+      }
     }
-    &__item {
-        // display: inline-block;
-        float: left;
-        width: $main-width;
-        height: $slider-height;
-        &--img1 {
-            background:
-            url('../img/grid.png'),
-            url('../img/rect.png'),
-            url('../img/slide1.jpg');
-            @extend %bg-img;
-            // display: none;
-        }
-        &--img2 {
-            background:
-            url('../img/grid.png'),
-            url('../img/rect.png'),
-            url('../img/slide2.jpg');
-            @extend %bg-img;
-            display: none;
-        }
-        &--img3 {
-            background:
-            url('../img/grid.png'),
-            url('../img/rect.png'),
-            url('../img/slide3.jpg');
-            @extend %bg-img;
-            display: none;
-        }
+  }
+
+  &__item {
+    // display: inline-block;
+    float: left;
+    height: $slider-height;
+    width: $main-width;
+
+    &--img1 {
+      @extend %bg-img;
+      background: url('../img/grid.png'),
+      url('../img/rect.png'),
+      url('../img/slide1.jpg');
+      // display: none;
     }
+
+    &--img2 {
+      @extend %bg-img;
+      background: url('../img/grid.png'),
+      url('../img/rect.png'),
+      url('../img/slide2.jpg');
+      display: none;
+    }
+
+    &--img3 {
+      @extend %bg-img;
+      background: url('../img/grid.png'),
+      url('../img/rect.png'),
+      url('../img/slide3.jpg');
+      display: none;
+    }
+  }
 }
 
 //  Block Logo
