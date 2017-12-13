@@ -1,65 +1,63 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { CarsService } from './cars.service';
+
+interface Cars {
+  name: string;
+  color: string;
+  id: number
+}
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent implements OnInit {
 
-  answers = [
-    {
-      type: 'yes',
-      text: 'Да'
-    },
-    {
-      type: 'no',
-      text: 'Нет'
-    }
-  ];
+  cars: Cars[] = [];
+  carName: string = '';
+  carColor: string = '';
+  colors = [ 'red', 'blue', 'green', 'pink', 'yellow', 'grey' ];
 
-  form: FormGroup;
+  appTitle;
 
-  charsCount = 4;
+  constructor(private carsService: CarsService) {};
 
   ngOnInit() {
-    this.form = new FormGroup({
-      user: new FormGroup({
-        email: new FormControl('', [Validators.required, Validators.email], [this.checkForEmail]),
-        pass: new FormControl('', [Validators.required, this.checkForLength.bind(this)])
-      }),
-      country: new FormControl('ru'),
-      answer: new FormControl('no')
-    });
+    this.appTitle = this.carsService.getAppTitle();
   }
 
-  checkForLength(control: FormControl) {
-    if (control.value.length <= this.charsCount) {
-      return {
-        'lengthError': true
-      }
-    }
-    return null
+  loadCars() {
+    this.carsService
+      .getCars()
+      .subscribe((cars: Cars[]) => { this.cars = cars },
+                  (error) => { console.clear(); alert(error); })
   }
 
-  checkForEmail(control: FormControl): Promise<any> {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (control.value === 'q@w') {
-          resolve({
-            'emailIsUsed': true
-          });
-        } else {
-          resolve(null)
-        }
-      }, 3000)
-    })
+  addCar() {
+    this.carsService
+      .addCar(this.carName, this.carColor)
+      .subscribe((car: Cars) => {this.cars.push(car)});
+    this.carName = '';
+    this.carColor = '';
   }
 
-  onSubmit() {
-    console.log('Submited!', this.form);
+  getRandColor() {
+    const num = Math.round(Math.random() * (this.colors.length - 1));
+    return this.colors[num];
+  }
+
+  setNewColor(car: Cars) {
+    this.carsService
+      .changeColor(car, this.getRandColor())
+      .subscribe((data) => {console.log(data);})
+  }
+
+  deleteCar(car: Cars) {
+    this.carsService
+      .deleteThisCar(car)
+      .subscribe((data) => {this.cars = this.cars
+        .filter(item => item.id !== car.id)})
   }
 
 }
