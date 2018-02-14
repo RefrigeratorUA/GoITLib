@@ -1,32 +1,18 @@
-<div class="col-xs-8 col-xs-offset-2">
-  <h1><b>{{ appTitle | async }}</b></h1>
-  <button  class="btn btn-primary" (click)="loadCars()">Загрузить машины</button>
-  <hr>
-  <div class="row">
-    <h4>Добавить машину</h4>
-    <div class="col-xs-5">
-      <p>Название машины</p>
-      <input type="text" class="form-control" [(ngModel)]="carName">
+<div class="container">
+
+  <nav style="margin-bottom: 20px;" class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li [routerLinkActiveOptions]="{ exact: true}" routerLinkActive="active"><a routerLink="/">Главная</a></li>
+        <li routerLinkActive="active"><a [routerLink]="'/cars'">Машины</a></li>
+      </ul>
     </div>
-    <div class="col-xs-5 col-xs-offset-2">
-      <p>Цвет машины</p>
-      <input type="text" class="form-control" [(ngModel)]="carColor">
+  </nav>
+
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <router-outlet></router-outlet>
     </div>
   </div>
-  <br>
-  <button  class="btn btn-success" (click)="addCar()">Добавить машину</button>
-  <hr>
-  <ul class="list-group">
-    <li class="list-group-item"
-        [ngStyle]="{background: 'lightgrey'}"
-        *ngFor="let car of cars">
-        <span *ngIf="(car.color === 'white') || (car.color === 'yellow')" class="badge"
-              [ngStyle]="{background: car.color, color: 'black'}">{{ car.id }}</span>
-        <span *ngIf="(car.color !== 'white') && (car.color !== 'yellow')" class="badge"
-              [ngStyle]="{background: car.color}">{{ car.id }}</span>
-        <b>{{ car.name }}&nbsp;</b><span [ngStyle]="{color: car.color}">({{ car.color }})</span>&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-xs btn-warning" (click)="setNewColor(car)">Изменить цвет</button>
-        <button class="btn btn-xs btn-danger" (click)="deleteCar(car)">Удалить</button>
-    </li>
-  </ul>
+
 </div>
