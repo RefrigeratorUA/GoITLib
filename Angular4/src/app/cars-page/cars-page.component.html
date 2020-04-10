@@ -1,16 +1,16 @@
-<a routerLink="/cars">Обновить страницу</a>
-<h2>Страница машин</h2>
+<h2 appColor>Страница машин</h2>
 <hr>
+
 <div class="row">
   <div class="col-xs-4">
     <ul class="list-group">
-      <li class="list-group-item"
-      *ngFor="let car of cars">
-      <a [routerLink]="['/cars', car.id, car.name]"
-          [queryParams]="{color: car.color, year: car.year}"
-          fragment="image">
-            {{ car.name }}
-      </a>
+      <li class="list-group-item" *ngFor="let car of cars">
+        <a
+          [routerLink]="['/cars', car.id, car.name]"
+          [queryParams]="{year: car.year, color: car.color}"
+        >
+          {{car.name}}
+        </a>
       </li>
     </ul>
   </div>

@@ -5,31 +5,28 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { CarsPageComponent } from './cars-page/cars-page.component';
-import { CarsService } from './cars.service';
+import { HeaderComponent } from './header/header.component';
+import { SharedModule } from './shared/shared.module';
+
 
 import { AppRoutingModule } from './app-routing.module';
-import { CarPageComponent } from './car-page/car-page.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-
-import { AuthService } from './auth.service';
-import { AuthGuard } from './auth-guard.service';
+import { CarsModule } from './cars-page/cars.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarsPageComponent,
     HomePageComponent,
-    CarPageComponent,
-    NotFoundComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarsModule,
+    SharedModule
   ],
-  providers: [CarsService, AuthService, AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

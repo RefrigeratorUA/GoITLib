@@ -1,10 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" ng-app="sampleApp">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/angular/angular.js"></script>
+    <title>DOM</title>
+
+    <!-- ng-show, ng-hide, ng-if, ng-class, ng-class-even, ng-class-odd, ng-style, $parent, ng-click, ng-mouseenter, ng-mouseleave, $event.
+         ng-disable, ng-readonly, ng-checked, ng-selected
+     -->
+
+    <script>
+
+        var newModuleApp = angular.module("sampleApp", []);
+
+        newModuleApp.controller("firstAppCtrl", function ($scope) {
+
+            $scope.hideElem1 = false;
+            $scope.hideElem2 = false;
+            $scope.hideElem3 = false;
+
+            $scope.addElem1 = false;
+            $scope.addElem2 = false;
+            $scope.addElem3 = false;
+
+            $scope.deleteElem1 = false;
+            $scope.deleteElem2 = false;
+            $scope.deleteElem3 = false;
+
+            $scope.classChange = "yellow";
+            $scope.border = false;
+            $scope.classes = [{display: "Green", value: "green"}, {display: "Yellow", value: "yellow"}, {display: "Red", value: "red"}];
+            $scope.classFlag = false;
+            $scope.classMsg = "Добавить классы";
+
+            $scope.classObj = {
+                color: false,
+                brd: false,
+                size: false
+            };
+
+            $scope.classObj1 = {
+                color: 'yellow',
+                border: '3px solid red',
+                width: '150px',
+                height: '150px',
+                backgroundColor: 'darkblue',
+                marginLeft: '10px'
+            };
+
+            $scope.data = [{key: "Key 1", value: 1, option: "first"}, {key: "Key 2", value: 2, option: "second"}, {key: "Key 3", value: 3, option: "third"}];
+            $scope.class1 = ["dom_1", "red"];
+            $scope.class2 = ["dom_1", "yellow"];
+
+            $scope.changeBorder = function () {
+                if (!$scope.border) {
+                    $scope.classChange +=" brd";
+                    $scope.border = true;
+                }
+                else {
+                    $scope.classChange = $scope.classChange.replace(" brd","");
+                    $scope.border = false;
+                }
+            }
+
+            $scope.changeClassArray = function () {
+                if (!$scope.classFlag) {
+                    $scope.classArray = ["dom_1", "red"];
+                    $scope.classFlag  = true;
+                    $scope.classMsg = "Удалить классы"
+                }
+                else {
+                    $scope.classArray = null;
+                    $scope.classFlag = false;
+                    $scope.classMsg = "Добавить классы"
+                }};
+
+            $scope.seeMouse = function (event) {
+                $scope.type = event.type;
+                if ($scope.type == "mouseout") {
+                    $scope.classChange = "yellow";
+                }
+            };
+
+            $scope.clickDiv = function (event) {
+                $scope.type = $scope.type + " " + event.type;
+                if (!$scope.classFlag) {
+                    $scope.classChange ="red";
+                    $scope.classFlag  = true;
+                }
+                else {
+                    $scope.classChange = "green";
+                    $scope.classFlag = false;
+                };
+            };
+
+            $scope.dataValue = false;
+
+        });
+
+    </script>
+
+    <style>
+        .dom_1 {
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin: 14px;
+            padding: 30px;
+        }
+
+        .green {
+            background-color: #1c7430;
+        }
+        .yellow {
+             background-color: #e0a800;
+         }
+        .red {
+              background-color: #c82333;
+        }
+        .brd {
+            border: 5px solid black;
+        }
+        .size {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .color {
+            background-color: aqua;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+
+    <div class="container" ng-controller="firstAppCtrl">
+
+<!-- ng-hide, ng-show скрывают/отображают элементы ДОМ через display: none! Ничего не удаляют/добавляют в разметку -->
+        <div class="row">
+            <div class="dom_1">
+                <input type="checkbox" ng-model="hideElem1"/> Hide Element 1<br />
+                <input type="checkbox" ng-model="hideElem2"/> Hide Element 2<br />
+                <input type="checkbox" ng-model="hideElem3"/> Hide Element 3<br />
+            </div>
+
+            <div class="dom_1 red" ng-hide="hideElem1">Element 1</div>
+            <div class="dom_1 yellow" ng-hide="hideElem2">Element 2</div>
+            <div class="dom_1 green" ng-hide="hideElem3">Element 3</div>
+        </div>
+
+<!-- ng-if изменяет ДОМ. Может (и делает) удалять, добавлять элементы разметки -->
+        <div class="row">
+            <div class="dom_1">
+                <input type="checkbox" ng-model="addElem1" /> Add Element 1<br />
+                <input type="checkbox" ng-model="addElem2" /> Add Element 2<br />
+                <input type="checkbox" ng-model="addElem3" /> Add Element 3<br />
+            </div>
+
+            <div class="dom_1 red" ng-if="addElem1">Element 1</div>
+            <div class="dom_1 yellow" ng-if="addElem2">Element 2</div>
+            <div class="dom_1 green" ng-if="addElem3">Element 3</div>
+        </div>
+        <div class="row">
+            <div class="dom_1">
+                <input type="checkbox" ng-model="deleteElem1" /> Remove Element 1<br />
+                <input type="checkbox" ng-model="deleteElem2" /> Remove Element 2<br />
+                <input type="checkbox" ng-model="deleteElem3" /> Remove Element 3<br />
+            </div>
+
+            <div class="dom_1 red" ng-if="!deleteElem1">Element 1</div>
+            <div class="dom_1 yellow" ng-if="!deleteElem2">Element 2</div>
+            <div class="dom_1 green" ng-if="!deleteElem3">Element 3</div>
+        </div>
+
+<!-- ng-class, ng-class-even, ng-class-odd, ng-style !!!! $parent(смотрит $scope родителя, а не свой. Наследие!???)       -->
+        <div class="row">
+            <div class="card card-body bg-light">
+                <div class="form-check" ng-repeat="item in classes">
+                    <label class="form-check-label" for="{{item.value}}">
+                        <input class="form-check-input" type="radio" name="selectedClass" ng-model="$parent.classChange" id="{{item.value}}" value="{{item.value}}">
+                        {{item.display}}&nbsp;{{item.value}}
+                    </label>
+                </div>
+
+                <div ng-click="changeBorder()" class="dom_1" ng-class="classChange">Нажми для добавления стиля: {{classChange}}</div>
+
+                <button type="button" class="btn btn-primary col-sm-2" ng-click="changeClassArray()">Массив классов: {{classMsg}}</button>
+                <div ng-class="classArray">{{classArray}}</div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="card card-body bg-light">
+                <div class="form-check">
+                    <input type="checkbox" ng-model="classObj.brd" /> Border<br />
+                    <input type="checkbox" ng-model="classObj.size" /> Size<br />
+                    <input type="checkbox" ng-model="classObj.color" /> Color<br />
+
+                    <div class="dom_1" ng-class="classObj">Объект классов, где ключ - имя класса</div>
+                    <div ng-style="classObj1">Объект классов, где ключ - свойство CSS</div>
+
+                </div>
+            </div>
+        </div>
+        <ul class="list-group">
+            <h4>Меняет классы списка в зависимости четный/нечетный элемент:</h4>
+            <li  ng-repeat="item in data" ng-class-even="class1" ng-class-odd="class2">{{$index+1}}.&nbsp;<b>Keys:</b>{{item.key}},&nbsp;<b>Values:</b>{{item.value}}</li>
+        </ul>
+<!-- События!!! ng-click, ng-mouseenter, ng-mouseleave... (много их) $event!!!       -->
+        <div class="row">
+            <div class="card card-body bg-light">
+                <h4>События (наведи, нажми):</h4>
+                <div ng-mouseenter="seeMouse($event)" ng-mouseleave="seeMouse($event)" ng-click="clickDiv($event)" class="dom_1" ng-class="classChange"><b>{{type}}</b></div>
+            </div>
+        </div>
+
+<!-- Валидация. ng-disable, ng-readonly, ng-checked, ng-selected. Значения true/false -->
+        <div class="row">
+            <div class="card card-body bg-light">
+                <h4 class="card-header">Boolean attributes</h4>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" ng-model="dataValue" /> <b>Применить аттрибуты</b>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary" ng-disabled="dataValue">ng-disabled</button>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        ng-readonly:
+                        <input class="form-control" ng-readonly="dataValue" value="Type here"/>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        <input type="checkbox" ng-checked="dataValue" /> ng-checked (checkbox)
+                        <input type="radio" ng-checked="dataValue" /> ng-checked (radio)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        ng-select
+                        <select class="form-control">
+                            <option value="value">Text 1</option>
+                            <option value="value" ng-selected="dataValue">ng-selected</option>
+                        </select>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>

@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="coursesListApp">
 <head>
+    <!--ng-app, angular.module angular.module().controller, $scope, ng-controller, ng-model, ng-repeat, {{ }}, ng-click -->
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/angular/angular.js"></script>
+    <title>Hello world!</title>
+    <script>
+        var model2 = {
+            user: "Guru",
+            courses: [{name: "HTML, CSS", pass: true}, {name: "JavaScript", pass: false},
+                        {name: "AngularJS", pass: false}, {name: "Angular 8", pass: false},
+                            {name: "C#", pass: true}, {name: "ASP.NET", pass: true}]
+        }
+
+        var newModuleApp = angular.module("coursesListApp", []);
+
+        newModuleApp.controller("coursesListCtrl", function ($scope) {
+            $scope.list = model2;
+
+            $scope.addCourses = function () {
+                let flag = false;
+                for (let i=0; i<$scope.list.courses.length; i++) {
+                    if ($scope.list.courses[i].name == $scope.newCourseName) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (flag || $scope.newCourseName === "" || $scope.newCourseName == undefined) {
+                        return flag ? alert('Такой курс уже существует!') : alert('Ошибка ввода данных!')
+                }
+                else {
+                        $scope.list.courses.push({
+                            name: $scope.newCourseName,
+                            pass: false
+                        });
+                };
+            };
+
+             $scope.delCourses = function (key, pass) {
+                 for (let i = 0; i < $scope.list.courses.length; i++) {
+                     if ($scope.list.courses[i].name == key && $scope.list.courses[i].pass == pass) {
+                         for (let j = i + 1; j < $scope.list.courses.length; j++) {
+                             $scope.list.courses[j - 1] = $scope.list.courses[j];
+                            }
+                            $scope.list.courses.length -= 1;
+                            return;
+                     }
+                 }
+             };
+
+             $scope.setStyleYesNo = function (arg) {
+                if (arg) {
+                   return "color: green; font-weight: bold;"
+                }
+                else {
+                    return "color: red; font-style: italic;"
+                }
+             };
+
+            $scope.setStyle = function (arg) {
+                if (arg) {
+                    return "text-decoration: line-through;"
+                }
+             };
+
+             $scope.showText = function (arg) {
+                 return arg ? 'Да' : 'Нет'
+             };
+        });
+    </script>
 </head>
-<body>
-$END$
+<body ng-controller="coursesListCtrl">
+    <div class="container">
+        <div class="pb-2 mt-4 mb-3 border-bottom">
+            <div class="pb-2 mt-4 mb-3 border-bottom">
+                <h1>Планировщик курсов</h1>
+                <h3>Пользователь: <b style={{setStyleYesNo(true)}}>{{list.user}}</b>. Количество курсов - {{list.courses.length}}</h3>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input ng-model="newCourseName" class="form-control" placeholder="Введите название курса!" />
+            </div>
+            <div class="col-sm-2">
+                <button ng-click="addCourses()" type="button" class="btn btn-warning btn-block">Добавить</button>
+            </div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col" class="col-1">Курс</th>
+                <th scope="col">Чек</th>
+                <th scope="col">Пройден</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="cours in list.courses">
+                <td style={{setStyle(cours.pass)}}>{{cours.name}}</td>
+                <td><input type="checkbox" ng-model="cours.pass"></td>
+                <td style={{setStyleYesNo(cours.pass)}}>{{showText(cours.pass)}}</td>
+                <td>
+                    <button ng-click="delCourses(cours.name, cours.pass)" type="button" class="btn btn-danger">Удалить</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

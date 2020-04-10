@@ -1,10 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" ng-app="sampleApp">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/angular/angular.js"></script>
+    <title>Form Validation</title>
+
+<!--  type, required, form novalidate, $error ($error.email, $error.required...), $pristine, $dirty, $valid, $invalid, $error, ng-pristine, ng-dirty, ng-valid, ng-invalid   -->
+
+    <script>
+
+        angular.module("sampleApp", [])
+            .controller("firstAppCtrl", function ($scope) {
+                $scope.tasks = [
+                    {action: "Task 1", complete: false, level: 'Low', email: "1@qwerty"},
+                    {action: "Task 2", complete: true, level: 'Low', email: "2@q"},
+                    {action: "Task 3", complete: false, level: 'Normal', email: "3@g"},
+                    {action: "Task 4", complete: true, level: 'Low', email: "4@g"},
+                    {action: "Task 5", complete: false, level: 'Hard', email: "5@h"}
+                ];
+
+                $scope.message = "Ready!";
+                $scope.addNewField = function (something) {
+                //    angular.isDefined - функция, которая позволяет проверить наличие свойства объекта
+                    $scope.message = something.action + " (email: " + something.email + ") (level: " + something.level + ")";
+                    if (angular.isDefined(something) && angular.isDefined(something.action) && angular.isDefined(something.level) && angular.isDefined(something.email)) {
+                            $scope.tasks.push({
+                                action: something.action,
+                                complete: false,
+                                level: something.level,
+                                email: something.email
+                            });
+                    };
+                }
+
+            });
+
+    </script>
+
+<!--    CSS правила AngularJS для валидации форм: .ng-pristine, ng-valid, .ng-invalid, .ng-dirty, .ng-invalid-email  -->
+    <style>
+        form .ng-pristine {
+            border: 3px dotted yellow;
+        }
+        form .ng-invalid.ng-dirty {
+            background-color: lightpink;
+        }
+        form .ng-valid.ng-dirty {
+            background-color: lightgreen;
+        }
+        form .ng-invalid-email {
+            color: darkred;
+        }
+
+        span.summary.ng-invalid {
+            color: red;
+            font-weight: bold;
+        }
+        span.summary.ng-valid {
+            color: yellowgreen;
+            font-weight: bold;
+        }
+        .error {
+            color: lightcoral;
+        }
+
+    </style>
+
 </head>
 <body>
-$END$
+    <div class="container" ng-controller="firstAppCtrl">
+        <h2 class="text-center">Вилидация формы!</h2>
+        <form name="FirstForm" novalidate ng-submit="addNewField(newItem)">
+            <div class="row">
+                <div class="col-4 card card-body bg-dark">
+                    <div class="form-group">
+                        <label for="inputAction"><b style="color: white">Action:</b></label>
+                        <input name="taskName" type="text" class="form-control" id="inputAction" ng-model="newItem.action" required>
+                        <br />
+                        <label for="inputEmail"><b style="color: white">Email:</b></label>
+                        <input name="taskEmail" type="email" class="form-control" id="inputEmail" ng-model="newItem.email" required>
+<!--    Вывод сообщений об ошибках под полем  input-a                    -->
+                            <div class="error" ng-show="FirstForm.taskEmail.$invalid && FirstForm.taskEmail.$dirty">
+                            <!--    Можно так. Но сильно плодит код                            -->
+                                <span ng-show="FirstForm.taskEmail.$error.email">
+                                     Введите корректный email
+                                </span>
+                                <span ng-show="FirstForm.taskEmail.$error.required">
+                                     Поле не должно быть пустым
+                                </span>
+                            <!--    Лучше так!                           -->
+                            </div>
+                        <br />
+                        <label for="inputPriority"><b style="color: white">Level:</b></label>
+                        <select id="inputPriority" class="form-control" ng-model="newItem.level" required>
+                            <option>Low</option>
+                            <option>Normal</option>
+                            <option>Hard</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success" ng-disabled="FirstForm.$invalid">Add</button>
+                    <br />
+                    <div class="card bg-secondary">
+                        <div style="color: white">
+                            <b>Message:</b> {{message}}
+                        </div>
+                        <div>
+                            <b style="color: white">Valid:</b>
+                            <span class="summary" ng-class="FirstForm.$valid ? 'ng-valid' : 'ng-invalid'">
+                                {{FirstForm.$valid}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 card card-body bg-light">
+                    <div class="card-header bg-primary">
+                        <div class="card-title text-center">
+                            <h3>Незавершенные задачи
+                                <span class="badge badge-pill badge-light" style="color: darkred">{{(tasks | filter : {complete : false}).length}}</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="card-body bg-warning">
+                        <table class="table table-hover">
+                            <thead>
+                            <th>Action Name</th>
+                            <th>Level</th>
+                            <th>Email</th>
+                            <th>Complete</th>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="item in tasks">
+                                <td>{{item.action}}</td>
+                                <td>{{item.level}}</td>
+                                <td>{{item.email}}</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" ng-model="item.complete" id="{{item.action}}"/>
+                                        <label class="custom-control-label" for="{{item.action}}"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>

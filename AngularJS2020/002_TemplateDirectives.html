@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sampleApp">
 <head>
+    <!-- ng-repeat, ng-cloak, ng-repeat-start, ng-repeat-end, ng-switch, ng-include, ng-if, ng-class, ng-options, $first, $last, $index, $even, $odd -->
+
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/angular/angular.js"></script>
+    <title>Template Directives</title>
+
+    <script>
+
+        var newModuleApp = angular.module("sampleApp", []);
+
+        newModuleApp.controller("firstAppCtrl", function ($scope) {
+            $scope.items = [{name: "Name 1", value: "Value 1", property: "Option 1", opt: "1"}, {name: "Name 2", value: "Value 2", property: "Option 2", opt: "2"},
+                {name: "Name 3", value: "Value 3", property: "Option 3", opt: "3"}, {name: "Name 4", value: "Value 4", property: "Option 4", opt: "4"},
+                {name: "Name 5", value: "Value 5", property: "Option 5", opt: "5"}];
+        });
+
+        newModuleApp.controller("secondAppCtrl", function ($scope) {
+            $scope.dataArray = ['Data 1', 'Data 2', 'Data 3', 'Data 4', 'Data 5'];
+            $scope.selectedArray = 'Data 3';
+
+            $scope.dataObj = [{key: "Key 1", value: "first"}, {key: "Key 2", value: "second"}, {key: "Key 3", value: "third"}];
+            $scope.selectedObj = $scope.dataObj[1];
+        });
+
+        newModuleApp.controller("thirdAppCtrl", function ($scope) {
+            $scope.data = [{key: "Key 1", value: 1, option: "first"}, {key: "Key 2", value: 2, option: "second"}, {key: "Key 3", value: 3, option: "third"}];
+            $scope.urlTable = "002_addTable.html";
+            $scope.urlList = "002_addList.html";
+
+            $scope.showList = function () {
+                $scope.urlListOrTable = $scope.urlList;
+            }
+
+            $scope.showTable = function () {
+                $scope.urlListOrTable = $scope.urlTable;
+            }
+        });
+
+        newModuleApp.controller("fourthAppCtrl", function ($scope) {
+            $scope.data = [{key: "Key 1", value: 1, option: "first"}, {key: "Key 2", value: 2, option: "second"}, {key: "Key 3", value: 3, option: "third"}];
+
+            $scope.options = [{display: "Таблица", value: "table"}, {display: "Список <UL>", value: "ul"}, {display: "Список <OL>", value: "ol"}];
+
+            $scope.mode = $scope.options[0];
+        });
+
+    </script>
+    <style>
+        .green {
+            /*background-color: #20c997;*/
+            font-style: italic;
+        }
+
+        .red {
+            /*background-color: #721c24;*/
+            font-weight: bold;
+            /*color: white;*/
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div class="container" ng-controller="firstAppCtrl">
+
+        <h3>Items</h3>
+        <table class="table table-hover">
+            <thead>
+                <th>#</th>
+                <th>Имя</th>
+                <th>Значение</th>
+                <th>Свойство</th>
+                <th>Option</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td ng-class="'green'">{{$index+1}}</td>
+                    <!-- $even, $odd, $first, $last, ng-if, $index-->
+                    <td ng-if="$first" style="color: #7abaff" ng-repeat="(key, opt) in item" ng-bind-template="{{key}} => {{opt}}" ng-class="$odd ? 'green' : 'red'"></td>
+                    <td ng-if="!$first && !$last" ng-repeat="(key, opt) in item" ng-bind-template="{{key}} => {{opt}}" ng-class="$even ? 'green' : 'red'"></td>
+                    <td ng-if="$last" style="color: #c82333" ng-repeat="(key, opt) in item" ng-bind-template="{{key}} => {{opt}}" ng-class="$odd ? 'green' : 'red'"></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+            <div ng-repeat-start="item in items" class="row">
+                <p style="font-weight: bold">{{$index+1}}. &nbsp;</p>
+                <p>{{item.name}} &nbsp;</p>
+                <p>{{item.value}} &nbsp;</p>
+                <p>{{item.property}}</p>
+            </div>
+            <hr/>
+            <br ng-repeat-end />
+    </div>
+
+    <div class="container mb-5" ng-controller="secondAppCtrl">
+        <select ng-model="selectedArray" ng-options="d for d in dataArray"></select>
+        <select ng-model="selectedObj" ng-options="item.key for item in dataObj track by item.value"></select>
+        {{selectedObj.key}}
+        {{selectedObj.value}}
+    </div>
+
+<!-- ng-include -->
+    <div class="container mb-5" ng-controller="thirdAppCtrl">
+        <h3>HTML element, ng-include</h3>
+        <ng-include src="urlTable"></ng-include>
+
+        <h3>HTML attribute, ng-include</h3>
+        <span ng-include="urlTable"></span>
+
+        <h3>HTML class, ng-include</h3>
+        <span class="ng-include: urlTable;"></span>
+
+        <div class="btn-group" role="group">
+            <button class="btn btn-secondary" ng-click="showTable()">Table</button>
+            <button class="btn btn-secondary" ng-click="showList()">List</button>
+        </div>
+        <ng-include src="urlListOrTable"></ng-include>
+    </div>
+
+<!-- ng-switch -->
+    <div class="container mb-5" ng-controller="fourthAppCtrl">
+        <h3>ng-switch</h3>
+        Шаблон <select ng-model="mode" ng-options="item.display for item in options track by item.value"></select>
+
+        <div ng-switch on="mode.value" style="margin-top: 20px;">
+
+<!--            mode.value=item.value="table"-->
+              <table class="table table-hover" ng-switch-when="table">
+                  <thead>
+                  <th>Keys</th>
+                  <th>Values</th>
+                  <th>Options</th>
+                  </thead>
+                  <tbody>
+                  <tr ng-repeat="item in data">
+                      <td>{{item.key}}</td>
+                      <td>{{item.value}}</td>
+                      <td>{{item.option}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+
+            <ul class="list-group" ng-switch-when="ul">
+                <li  ng-repeat="item in data" class="list-group-item">{{$index+1}}.&nbsp;<b>Keys:</b>{{item.key}},&nbsp;<b>Values:</b>{{item.value}},&nbsp;<b>Options:</b>{{item.option}}</li>
+            </ul>
+
+            <ol class="list-group" ng-switch-when="ol">
+                <li  ng-repeat="item in data" class="list-group-item">
+                    <b>Keys:</b>{{item.key}},&nbsp;<b>Options:</b>{{item.option}}
+                    <span class="badge badge-danger">{{item.value}}</span>
+                </li>
+            </ol>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
