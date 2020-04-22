@@ -30,7 +30,9 @@ body > div {
 /* Left Sidebar */
 aside {
     flex: 0 0 370px;
-    width: 370px;
+    display: flex;
+    flex-direction: column;
+    /* width: 370px; */
     padding: 40px 0 40px 0;
     font-weight: 400;
     /* background: #1b3892; */
@@ -43,7 +45,7 @@ aside div {
 aside div div {
     margin: 0;
 }
-aside img {
+aside > img {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -82,6 +84,14 @@ aside li::before {
 }
 .my-phone a {
     text-decoration: none;
+}
+div.w3s-valid {
+    margin-top: auto;
+    opacity: 0.5;
+}
+.w3s-valid a {
+    display: block;
+    line-height: 10px;
 }
 
 /* Main content */
